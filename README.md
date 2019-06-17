@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-1. [IAM 유저 생성하기](doc/create-iam-user)
+1. [IAM 유저 생성하기](doc/create-iam-user.md)
 
 2. [워크스페이스 생성하기](doc/create-a-workspace)
 
