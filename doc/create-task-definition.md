@@ -1,5 +1,19 @@
 # Task Definition 생성하기
 
+## ECS Task 실행을 위한 IAM 역활 생성하기
+
+1. 이 [링크를 클릭하여 AmazonECSTaskExecutionRolePolicy 를 가진 IAM 역활을 생성합니다.](https://console.aws.amazon.com/iam/home?region=us-west-2#/roles$new?step=type)
+
+2. AWS service 와 EC2 를 선택하고 Next 버튼을 클릭합니다.
+
+3. **AmazonECSTaskExecutionRolePolicy" 를 Filter Policies에 입력하고 체크를 한 다음에 Next 버튼을 클릭합니다.
+
+4. Tag 입력은 생력합니다. 바로 리뷰를 위해서 Next 버튼을 누릅니다.
+
+5. Name에 **ecsTaskExecutionRole** 을 입력하고 Create Role 버튼을 누릅니다.
+
+## Json을 통해서 Task Definition 생성하기
+
 1. [https://console.aws.amazon.com/ecs/](https://console.aws.amazon.com/ecs/) 에서 Amazon ECS 콘솔을 엽니다.
 
 2. 왼쪽 탐색 창에서 Task Definitions(작업 정의), Create new Task Definition(새 작업 정의 생성)을 차례대로 선택합니다.
@@ -10,7 +24,7 @@
 
     ![Alt](../images/ecs/create-task-definition.png "create task definition")
 
-5. 에디터를 열어서 아래의 파일의 YOUR_ACCOUNT_ID 를 여러분의 계정 ID ( 숫자 ) 로 변경하고 YOUR_IMAGE_URI 는 앞의 실습에서 생성한 ECR 리포지토리 URI를 입력합니다.
+5. 윈도우즈 혹은 Mac에서 에디터를 열어서 아래의 텍스트를 붙여넣습니다. YOUR_ACCOUNT_ID 를 여러분의 계정 ID ( 숫자 ) 로 변경하고 YOUR_IMAGE_URI 는 앞의 실습에서 생성한 ECR 리포지토리 URI를 입력합니다.
 
     ```json
     {
@@ -26,7 +40,7 @@
         }]
     }],
     "requiresCompatibilities": [
-        "FARGATE"
+        "EC2"
     ],
     "networkMode": "awsvpc",
     "cpu": "256",
@@ -36,13 +50,15 @@
     ```
 
 6. 실제로 잘 작성된 json 파일은 다음과 같습니다. 띄워쓰기 및 쌍따옴표를 생략하지 않도록 주의합니다.
+   
+   > 어카운트 아이디 및 image URI를 정확하게 확인하고 입력합니다.
 
     ```json
     {
     "executionRoleArn": "arn:aws:iam::xxxxxxxxxxxx:role/ecsTaskExecutionRole",
     "containerDefinitions": [{
         "name": "hol-webapp",
-        "image": "xxxxxxxxxxxx.dkr.ecr.us-west-2.amazonaws.com/containerhol/webapphol",
+        "image": "01234567890.dkr.ecr.us-west-2.amazonaws.com/containerhol/webapphol",
         "essential": true,
         "portMappings": [{
         "hostPort": 80,
@@ -51,7 +67,7 @@
         }]
     }],
     "requiresCompatibilities": [
-        "FARGATE"
+        "EC2"
     ],
     "networkMode": "awsvpc",
     "cpu": "256",

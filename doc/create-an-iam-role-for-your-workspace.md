@@ -4,7 +4,7 @@
 
 2. AWS service 와 EC2 가 선택된 것을 확인하고 권한을 확하기 위해서 Next 버튼을 클릭합니다.
 
-3. Confirm that AdministratorAccess 가 체크된 것을 확인하고 Next 버튼을 클릭합니다.
+3. AdministratorAccess 가 체크된 것을 확인하고 Next 버튼을 클릭합니다.
 
 4. Tag 입력은 생력합니다. 바로 리뷰를 위해서 Next 버튼을 누릅니다.
 

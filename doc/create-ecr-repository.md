@@ -14,12 +14,6 @@
 
 5. 리포지토리 구성에 리포지토리의 이름의 / 뒤에 **containerhol/webapphol** 라고 입력을 하고 리포지토리 생성을 선택합니다.
 
-6. Code Commit에서 사용할 HTTPS Git Credential(자격증명) 생성하기 항목에서 생성한 Git Credential 파일을 열어서 User Name과 Password를 보고 터미털에 복사해서 붙여넣기 합니다. 정상적으로 입력했다면 다음과 같은 화면을 볼 수 있습니다.
-
-```bash
-warning: You appear to have cloned an empty repository.
-```
-
 ## ECR 리포지토리에 nginx 도커 이미지 푸쉬하기
 
 1. 생성한 리포지토리를 선택하고 오른쪽 상단의 **View push commands(푸시 명령 보기)** 를 선택하여 새 리포지토리에 푸시하는 단계를 봅니다. 다음과 같은 화면을 볼 수 있습니다.
@@ -28,7 +22,9 @@ warning: You appear to have cloned an empty repository.
 
     위의 명령어들을 이용하여 직접 ECR 리포지토리에 nginx 도커 이미지를 푸쉬해보도록 합니다.
 
-2. 아래의 명령으를 통해서 ecr 레포지토리에 로그인을 합니다.
+2. 앞에서 생성한 Cloud9의 워크스페이스에 접속하고 터미널 창을 엽니다. Cloud9 터미널 창에서 아래의 명령으를 통해서 ecr 레포지토리에 로그인을 합니다.
+
+    > 아래의 명령어를 그대로 복사해서 Cloud9의 터미널 창에 붙여넣습니다. 키보드 단축키를 사용해서 복사하여 붙여넣습니다.
 
     ```bash
     $(aws ecr get-login --no-include-email --region us-west-2)

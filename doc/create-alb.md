@@ -16,12 +16,15 @@
 
 6. Security Group: vpc에 연결된 디폴트 보안 그룹 선택하고 다음으로 넘어갑니다.
 
-7. Configure Routing 섹션 은 다음과 같이 입력하니다. 나머지는 디폴트로 둡니다.
+7. "Improve you load balancer's security. Your load balancer is not using secure listener" 라는 메시지가 출력되는데 무시하고 다음으로 넘어갑니다.
+
+8. Configure Routing 섹션 은 다음과 같이 입력하니다. 나머지는 디폴트로 둡니다.
     - name: hol-tg-1
     - target type: IP
-8. Register Targets 은 생략하고 넘어갑니다.
 
-9. Create 버튼을 눌러서 로드 밸런서를 생성합니다.
+9. Register Targets 은 생략하고 넘어갑니다.
+
+10. Create 버튼을 눌러서 로드 밸런서를 생성합니다.
 
 ## [다음: Service 작성하여 서비스 배포하기](create-service.md)
 
