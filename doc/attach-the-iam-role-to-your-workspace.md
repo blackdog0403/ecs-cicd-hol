@@ -1,4 +1,4 @@
-# 워크스페이스에 IAM 역활 추가하기
+# 워크스페이스에 IAM 역할 추가하기
 
 1. 다음의 링크를 클릭하여 Cloud9 EC2 인스턴스틀 찾습니다.
 2. 인스턴스를 선택하고  Actions / Instance Settings / Attach/Replace IAM Role 을 차례대로 선택합니다.

@@ -1,6 +1,6 @@
-# 워크스페이스를 위한 IAM 역활 생성하기
+# 워크스페이스를 위한 IAM 역할 생성하기
 
-1. 이 [링크를 클릭하여 Administrator Access 를 가진 IAM 역활을 생성합니다.](https://console.aws.amazon.com/iam/home#/roles$new?step=review&commonUseCase=EC2%2BEC2&selectedUseCase=EC2&policies=arn:aws:iam::aws:policy%2FAdministratorAccess)
+1. 이 [링크를 클릭하여 Administrator Access 를 가진 IAM 역할을 생성합니다.](https://console.aws.amazon.com/iam/home#/roles$new?step=review&commonUseCase=EC2%2BEC2&selectedUseCase=EC2&policies=arn:aws:iam::aws:policy%2FAdministratorAccess)
 
 2. AWS service 와 EC2 가 선택된 것을 확인하고 권한을 확하기 위해서 Next 버튼을 클릭합니다.
 

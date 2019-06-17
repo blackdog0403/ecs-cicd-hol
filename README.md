@@ -8,9 +8,9 @@
 
 2. [워크스페이스 생성하기](doc/create-a-workspace.md)
 
-3. (선택사항) [워크스페이스를 위한 IAM 역활 생성하기](doc/create-an-iam-role-for-your-workspace.md)
+3. (선택사항) [워크스페이스를 위한 IAM 역할 생성하기](doc/create-an-iam-role-for-your-workspace.md)
 
-4. (선택사항) [워크스페이스에 IAM 역활 추가하기](doc/attach-the-iam-role-to-your-workspace.md)
+4. (선택사항) [워크스페이스에 IAM 역할 추가하기](doc/attach-the-iam-role-to-your-workspace.md)
 
 ## ECR repository 등록 및 ECS 클러스터 생성 Task Definition 등록하기
 

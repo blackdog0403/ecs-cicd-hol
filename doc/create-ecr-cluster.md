@@ -6,7 +6,7 @@
 
 3. 클러스터 페이지에서 Create Cluster (클러스터 생성) 를 선택합니다.
 
-4. Select cluster compatibility(클러스터 호환성 선택)에서 **EC2 Linux + Networking** 를 선택한 후 다음 단계를 선택합니다.
+4. Select cluster template(클러스터 템플릿 선택)에서 **EC2 Linux + Networking** 를 선택한 후 다음 단계를 선택합니다.
 
 5. 다음 세부항목에 대해서 입력을 합니다. 나머지는 다 디폴트로 내버려둡니다.
 

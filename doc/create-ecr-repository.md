@@ -62,4 +62,4 @@
 
 ## [메인페이지로 돌아가기](../README.md)
 
-## [이전: 워크스페이스에 IAM 역활 추가하기](attach-the-iam-role-to-your-workspace.md)
+## [이전: 워크스페이스에 IAM 역할 추가하기](attach-the-iam-role-to-your-workspace.md)

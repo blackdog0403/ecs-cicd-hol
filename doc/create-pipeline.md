@@ -56,7 +56,7 @@
 
 2. 왼쪽 탐색 창에서 역할을 선택합니다.
 
-3. 검색란에 codebuild-를 입력하고 CodePipeline 마법사가 생성한 역할을 선택합니다. 이 핸즈온랩에서의 역활이름은 **codebuild-hol-build--service-role**입니다.
+3. 검색란에 codebuild-를 입력하고 CodePipeline 마법사가 생성한 역할을 선택합니다. 이 핸즈온랩에서의 역할이름은 **codebuild-hol-build--service-role**입니다.
 
 4. Summary(요약) 페이지에서 Attach policies (정책 연결)을 선택합니다.
 

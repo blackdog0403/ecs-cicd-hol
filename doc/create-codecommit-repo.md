@@ -12,7 +12,7 @@
 
 ## Code Commit에서 사용할 HTTPS Git Credential(자격증명) 생성하기
 
-> CodeCommit에 엑세스하기 위한 IAM 사용자를 생성 및 구성합니다. [아직 사용자에게 IAM 역활을 부여하지 않았다면 다음의 링크를 클릭하여 사전준비 사항을 수행하도록 합니다.](./../README#Prerequisites) 이 실습에서는 새롭게 생성한 사용자에게 Administrator Access를 부여하였기 때문에 CodeCommit에 대한 Access를 따로 추가하지 않아도 됩니다.
+> CodeCommit에 엑세스하기 위한 IAM 사용자를 생성 및 구성합니다. [아직 사용자에게 IAM 역할을 부여하지 않았다면 다음의 링크를 클릭하여 사전준비 사항을 수행하도록 합니다.](./../README#Prerequisites) 이 실습에서는 새롭게 생성한 사용자에게 Administrator Access를 부여하였기 때문에 CodeCommit에 대한 Access를 따로 추가하지 않아도 됩니다.
 
 1. AWS Management 콘솔에 로그인한 [다음 링크를 클릭해서 IAM 콘솔을 엽니다](https://console.aws.amazon.com/iam/). CodeCommit 접속을 위해 Git 자격 증명을 생성 및 사용할 IAM 사용자로 로그인해야 합니다.
 

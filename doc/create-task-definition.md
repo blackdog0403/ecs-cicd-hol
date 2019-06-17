@@ -1,12 +1,12 @@
 # Task Definition 생성하기
 
-## ECS Task 실행을 위한 IAM 역활 생성하기
+## ECS Task 실행을 위한 IAM 역할 생성하기
 
-1. 이 [링크를 클릭하여 AmazonECSTaskExecutionRolePolicy 를 가진 IAM 역활을 생성합니다.](https://console.aws.amazon.com/iam/home?region=us-west-2#/roles$new?step=type)
+1. 이 [링크를 클릭하여 AmazonECSTaskExecutionRolePolicy 를 가진 IAM 역할을 생성합니다.](https://console.aws.amazon.com/iam/home?region=us-west-2#/roles$new?step=type)
 
 2. AWS service 와 EC2 를 선택하고 Next 버튼을 클릭합니다.
 
-3. **AmazonECSTaskExecutionRolePolicy" 를 Filter Policies에 입력하고 체크를 한 다음에 Next 버튼을 클릭합니다.
+3. **"AmazonECSTaskExecutionRolePolicy"** 를 Filter Policies에 입력하고 체크를 한 다음에 Next 버튼을 클릭합니다.
 
 4. Tag 입력은 생력합니다. 바로 리뷰를 위해서 Next 버튼을 누릅니다.
 
