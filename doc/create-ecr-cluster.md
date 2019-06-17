@@ -25,8 +25,8 @@
 
     ![Alt](../images/ecs/view-cluster-status.png "generate git credential")
 
-## [다음: Task Definition 작성하기](./create-task-definition)
+## [다음: Task Definition 작성하기](create-task-definition)
 
 ## [메인페이지로 돌아가기](../README)
 
-## [ECR 에 도커 이미지를 위한 리포지토리 생성하기](./create-ecr-repository)
+## [ECR 에 도커 이미지를 위한 리포지토리 생성하기](create-ecr-repository)

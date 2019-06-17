@@ -52,8 +52,8 @@
     - Port Range: 8080
     - Source: 0.0.0.0/0
 
-## [다음: ECR 클러스터 생성하기](./create-ecr-cluster)
+## [다음: ECR 클러스터 생성하기](create-ecr-cluster)
 
 ## [메인페이지로 돌아가기](../README)
 
-## [ECR 에 도커 이미지를 위한 리포지토리 생성하기](./create-ecr-repository)
+## [ECR 에 도커 이미지를 위한 리포지토리 생성하기](create-ecr-repository)

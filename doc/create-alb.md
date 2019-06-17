@@ -23,8 +23,8 @@
 
 9. Create 버튼을 눌러서 로드 밸런서를 생성합니다.
 
-## [다음: Service 작성하여 서비스 배포하기](./create-service)
+## [다음: Service 작성하여 서비스 배포하기](create-service)
 
 ## [메인페이지로 돌아가기](../README)
 
-## [이전: Task Definition 작성하기](./create-task-definition)
+## [이전: Task Definition 작성하기](create-task-definition)

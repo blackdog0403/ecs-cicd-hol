@@ -62,8 +62,8 @@ warning: You appear to have cloned an empty repository.
     latest: digest: sha256:079aa93463d2566b7a81cbdf856afc6d4d2a6f9100ca3bcbecf24ade92c9a7fe size: 948
     ```
 
-## [다음: ECR 클러스터를 위한 VPC 생성하기](./create-vpc)
+## [다음: ECR 클러스터를 위한 VPC 생성하기](create-vpc)
 
 ## [메인페이지로 돌아가기](../README)
 
-## [이전: 워크스페이스에 IAM 역활 추가하기](./attach-the-iam-role-to-your-workspace)
+## [이전: 워크스페이스에 IAM 역활 추가하기](attach-the-iam-role-to-your-workspace)

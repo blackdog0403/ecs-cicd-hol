@@ -1,4 +1,4 @@
-# Code Commit Repository에 Dockefile 및 buildspec.yaml 추가하기
+# [Code Commit Repository에 Dockefile 및 buildspec.yaml 추가하기](title)
 
 ## buildspec.yaml 추가하기
 
@@ -145,8 +145,8 @@
 
 11. 다음 링크를 통해서 이동하여 정상적으로 푸쉬된 파일들을 확인해 봅니다. [https://us-west-2.console.aws.amazon.com/codesuite/codecommit/repositories?region=us-west-2](https://us-west-2.console.aws.amazon.com/codesuite/codecommit/repositories?region=us-west-2)
 
-## [다음: Cope Pipeline을 생성하여 ECS에 지속적인 배포하기](./create-pipeline)
+## [다음: Cope Pipeline을 생성하여 ECS에 지속적인 배포하기](create-pipeline)
 
 ## [메인페이지로 돌아가기](../README)
 
-## [이전: Code Commit에 Git Repository 생성하고 Cloud9에 형상 clone 하기](./create-codecommit-repo)
+## [이전: Code Commit에 Git Repository 생성하고 Cloud9에 형상 clone 하기](create-codecommit-repo)

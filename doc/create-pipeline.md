@@ -109,4 +109,4 @@
 
 ## [메인페이지로 돌아가기](../README)
 
-## [이전: Code Commit Repository에 Dockefile 및 buildspec.yaml 추가하기](./create-resource-for-build)
+## [이전: Code Commit Repository에 Dockefile 및 buildspec.yaml 추가하기](create-resource-for-build)

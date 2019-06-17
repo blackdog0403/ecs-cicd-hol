@@ -68,8 +68,8 @@
 
     ![Alt](../images/ecs/result-task-definition.png "create task definition")
 
-## [다음: Service에서 사용할 Application Load Balancer 생성하기](./create-alb)
+## [다음: Service에서 사용할 Application Load Balancer 생성하기](create-alb)
 
 ## [메인페이지로 돌아가기](../README)
 
-## [이전: ECR 클러스터 생성하기](./create-ecr-cluster)
+## [이전: ECR 클러스터 생성하기](create-ecr-cluster)

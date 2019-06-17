@@ -1,4 +1,4 @@
-# 워크스페이스 생성하기
+# Cloud9 워크스페이스 생성하기
 
 > **Cloud9 워크스페이스는 루트 계정 사용자가 아니라 관리자 권한을 가진 IAM 사용자가 생성해야 합니다. 루트 계정 사용자가 아닌 IAM 사용자로 로그인했는지 확인하세요.**
 >
@@ -18,8 +18,8 @@
 
      ![Alt](../images/cloud9/c9after.png "cloud9 afters")
 
-## [다음: ECR 에 도커 이미지를 위한 리포지토리 생성하기](./create-ecr-repository)
+## [다음: ECR 에 도커 이미지를 위한 리포지토리 생성하기](create-ecr-repository)
 
 ## [메인페이지로 돌아가기](../README)
 
-## [이전: IAM 유저 생성하기](./create-iam-user)
+## [이전: IAM 유저 생성하기](create-iam-user)

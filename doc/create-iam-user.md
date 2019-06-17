@@ -1,4 +1,4 @@
-# AWS 계정 생성하기
+# [AWS 계정 생성하기](title)
 
 1. AWS 계정을 가지고 있지 않다면 :[클릭하여 AWS 계정을 만듭니다](https://aws.amazon.com/getting-started/)
 
@@ -20,6 +20,6 @@
 
      ![Alt](../images/iam/iam-4-save-url.png "create user")
 
-## [다음: 워크스페이스 생성하기](./create-a-workspace)
+## [다음: 워크스페이스 생성하기](create-a-workspace#title)
 
-## [메인페이지로 돌아가기](../README)
+## [메인페이지로 돌아가기](../README#delete)

@@ -53,8 +53,8 @@
 
     ![Alt](../images/ec2/view-result.png "view target group")
 
-## [다음: Code Commit에 Git Repository 생성하고 Cloud9에 형상 clone 하기](./create-codecommit-repo)
+## [다음: Code Commit에 Git Repository 생성하고 Cloud9에 형상 clone 하기](create-codecommit-repo)
 
 ## [메인페이지로 돌아가기](../README)
 
-## [이전: Task Definition 작성하기](./create-alb)
+## [이전: Task Definition 작성하기](create-alb)
