@@ -42,7 +42,7 @@
 ### Security Group 설정하기
 
 1. 네비게이션 메뉴에서 Security Groups를 선택합니다.
-2. Security Group 목록에서 OnPrem VPC의 Default Security Group을 선택합니다.
+2. Security Group 목록에서 ContainerHol VPC의 Default Security Group을 선택합니다.
 3. 화면 하단에서 Inbound Rules를 선택한 후 Edit rules 버튼을 클릭합니다.
 4. Add rule을 누르고 아래 2개의 rule을 입력합니다:
     - Type: HTTP
