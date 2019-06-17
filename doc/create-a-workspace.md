@@ -18,8 +18,8 @@
 
      ![Alt](../images/cloud9/c9after.png "cloud9 afters")
 
-## [다음: ECR 에 도커 이미지를 위한 리포지토리 생성하기](create-ecr-repository)
+## [다음: ECR 에 도커 이미지를 위한 리포지토리 생성하기](create-ecr-repository.md)
 
-## [메인페이지로 돌아가기](../README)
+## [메인페이지로 돌아가기](../README.md)
 
-## [이전: IAM 유저 생성하기](create-iam-user)
+## [이전: IAM 유저 생성하기](create-iam-user.md)

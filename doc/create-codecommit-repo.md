@@ -64,8 +64,8 @@
 
 9. 정상적으로 Code Commit 리포지토리를 생성하였으며 테스트를 완료했습니다.
 
-## [다음: Code Commit Repository에 Dockefile 및 buildspec.yaml 추가하기](create-resource-for-build)
+## [다음: Code Commit Repository에 Dockefile 및 buildspec.yaml 추가하기](create-resource-for-build.md)
 
-## [메인페이지로 돌아가기](../README)
+## [메인페이지로 돌아가기](../README.md)
 
-## [이전: Service 작성하여 서비스 배포하기](create-service)
+## [이전: Service 작성하여 서비스 배포하기](create-service.md)
