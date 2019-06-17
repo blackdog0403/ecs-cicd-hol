@@ -6,7 +6,7 @@
 
 2. AWS service 와 EC2 를 선택하고 Next 버튼을 클릭합니다.
 
-3. **AmazonECSTaskExecutionRolePolicy" 를 Filter Policies에 입력하고 체크를 한 다음에 Next 버튼을 클릭합니다.
+3. **"AmazonECSTaskExecutionRolePolicy"** 를 Filter Policies에 입력하고 체크를 한 다음에 Next 버튼을 클릭합니다.
 
 4. Tag 입력은 생력합니다. 바로 리뷰를 위해서 Next 버튼을 누릅니다.
 
