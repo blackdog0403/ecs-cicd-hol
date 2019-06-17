@@ -18,7 +18,7 @@
 
 7. "Improve you load balancer's security. Your load balancer is not using secure listener" 라는 메시지가 출력되는데 무시하고 다음으로 넘어갑니다.
 
-8. Configure Routing 섹션 은 다음과 같이 입력하니다. 나머지는 디폴트로 둡니다.
+8. Configure Routing 섹션 은 다음과 같이 입력합니다. 나머지는 디폴트로 둡니다.
     - name: hol-tg-1
     - target type: IP
 
