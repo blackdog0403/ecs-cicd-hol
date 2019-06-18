@@ -2,6 +2,7 @@
 
 ## ECS Task 실행을 위한 IAM 역할 생성하기
 
+**생략할 것**
 1. 이 [링크를 클릭하여 AmazonECSTaskExecutionRolePolicy 를 가진 IAM 역할을 생성합니다.](https://console.aws.amazon.com/iam/home?region=us-west-2#/roles$new?step=type)
 
 2. AWS service 와 EC2 를 선택하고 Next 버튼을 클릭합니다.
@@ -11,6 +12,8 @@
 4. Tag 입력은 생력합니다. 바로 리뷰를 위해서 Next 버튼을 누릅니다.
 
 5. Name에 **ecsTaskExecutionRole** 을 입력하고 Create Role 버튼을 누릅니다.
+
+ecsTaskExecutionRole을 삭제하고 아래의 가이드로 할것
 
 ## Json을 통해서 Task Definition 생성하기
 
@@ -40,7 +43,7 @@
         }]
     }],
     "requiresCompatibilities": [
-        "EC2"
+        "FARGATE"
     ],
     "networkMode": "awsvpc",
     "cpu": "256",
@@ -67,7 +70,7 @@
         }]
     }],
     "requiresCompatibilities": [
-        "EC2"
+        "FARGATE"
     ],
     "networkMode": "awsvpc",
     "cpu": "256",
