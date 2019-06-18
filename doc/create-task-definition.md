@@ -1,18 +1,5 @@
 # Task Definition 생성하기
 
-## ECS Task 실행을 위한 IAM 역할 생성하기
-
-**생략할 것**
-1. 이 [링크를 클릭하여 AmazonECSTaskExecutionRolePolicy 를 가진 IAM 역할을 생성합니다.](https://console.aws.amazon.com/iam/home?region=us-west-2#/roles$new?step=type)
-
-2. AWS service 와 EC2 를 선택하고 Next 버튼을 클릭합니다.
-
-3. **"AmazonECSTaskExecutionRolePolicy"** 를 Filter Policies에 입력하고 체크를 한 다음에 Next 버튼을 클릭합니다.
-
-4. Tag 입력은 생력합니다. 바로 리뷰를 위해서 Next 버튼을 누릅니다.
-
-5. Name에 **ecsTaskExecutionRole** 을 입력하고 Create Role 버튼을 누릅니다.
-
 ecsTaskExecutionRole을 삭제하고 아래의 가이드로 할것
 
 ## Json을 통해서 Task Definition 생성하기
@@ -87,32 +74,48 @@ ecsTaskExecutionRole을 삭제하고 아래의 가이드로 할것
 
     ![Alt](../images/ecs/result-task-definition.png "create task definition")
 
-10. 참고 Fargate로 클러스터를 구성하고 Task Definition을 사용할때의 Task Definition 예제.
+---
 
-    ```json
-    {
-    "executionRoleArn": "arn:aws:iam::012345678910:role/ecsTaskExecutionRole",
-    "containerDefinitions": [{
-        "name": "hol-webapp",
-        "image": "01234567890.dkr.ecr.us-west-2.amazonaws.com/containerhol/webapphol",
-        "essential": true,
-        "portMappings": [{
-        "hostPort": 80,
-        "protocol": "tcp",
-        "containerPort": 80
-        }]
-    }],
-    "requiresCompatibilities": [
-        "FARGATE"
-    ],
-    "networkMode": "awsvpc",
-    "cpu": "256",
-    "memory": "512",
-    "family": "hol-webapp"
-    }
-    ```
+## 참고
 
-    > ECS 클러스터를 생성할떄 "ecsInstanceRole"이 자동 생성되었고 EC2 기반의 ECS 클러스터는 이 역할을 기반으로 ECR 이미지 레지스트리에서 이미지를 가지고 와서 Task를 실행한다. 이와는 다르게 Fargate는 완전관리형 Serverless 서비스이기 때문에 TASK를 실행하기 위한 role을 정의해야합니다. TaskDefinition을 정의할때 위와 같이 정의를 하면 자동으로 **ecsTaskExecutionRole** 을 생성해줍니다.
+### (생략할 것) Fargate로 클러스터를 구성하고 Task Definition을 사용할때의 Task Definition 예제
+
+```json
+{
+"executionRoleArn": "arn:aws:iam::012345678910:role/ecsTaskExecutionRole",
+"containerDefinitions": [{
+    "name": "hol-webapp",
+    "image": "01234567890.dkr.ecr.us-west-2.amazonaws.com/containerhol/webapphol",
+    "essential": true,
+    "portMappings": [{
+    "hostPort": 80,
+    "protocol": "tcp",
+    "containerPort": 80
+    }]
+}],
+"requiresCompatibilities": [
+    "FARGATE"
+],
+"networkMode": "awsvpc",
+"cpu": "256",
+"memory": "512",
+"family": "hol-webapp"
+}
+```
+
+> ECS 클러스터를 생성할떄 "ecsInstanceRole"이 자동 생성되었고 EC2 기반의 ECS 클러스터는 이 역할을 기반으로 ECR 이미지 레지스트리에서 이미지를 가지고 와서 Task를 실행한다. 이와는 다르게 Fargate는 완전관리형 Serverless 서비스이기 때문에 TASK를 실행하기 위한 role을 정의해야합니다. TaskDefinition을 정의할때 위와 같이 정의를 하면 자동으로 **ecsTaskExecutionRole** 을 생성합니다.
+
+### (생략할 것) ECS Task 실행을 위한 IAM 역할 수동 생성하기
+
+1. 이 [링크를 클릭하여 AmazonECSTaskExecutionRolePolicy 를 가진 IAM 역할을 생성합니다.](https://console.aws.amazon.com/iam/home?region=us-west-2#/roles$new?step=type)
+
+2. AWS service 와 EC2 를 선택하고 Next 버튼을 클릭합니다.
+
+3. **"AmazonECSTaskExecutionRolePolicy"** 를 Filter Policies에 입력하고 체크를 한 다음에 Next 버튼을 클릭합니다.
+
+4. Tag 입력은 생력합니다. 바로 리뷰를 위해서 Next 버튼을 누릅니다.
+
+5. Name에 **ecsTaskExecutionRole** 을 입력하고 Create Role 버튼을 누릅니다.
 
 ## [다음: Service에서 사용할 Application Load Balancer 생성하기](create-alb.md)
 
