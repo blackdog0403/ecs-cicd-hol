@@ -36,14 +36,14 @@
 
 ## [실습후 리소스 삭제하기](delete)
 
-1. Code Pipeline 삭제
-2. Code commit 리포지토리 삭제
-3. Code build 프로젝트 삭제
-4. ECS 서비스 삭제
-5. ECS Task Definition 삭제
-6. ECS 클러스터 삭제
-7. ECR 리포지트리 삭제
-8. Cloud9 워크스페이스 삭제
-9. Target Group 삭제
-10. ALB 삭제
+1. ALB 삭제
+2. Target Group 삭제
+3. ECS 서비스 삭제
+4. ECS Task Definition 삭제
+5. ECS 클러스터 삭제
+6. ECR 이미지 레지스트리 삭제
+7. Code Pipeline 삭제
+8. Code commit 리포지토리 삭제
+9. Code build 프로젝트 삭제
+10. Cloud9 워크스페이스 삭제
 11. VPC 삭제
