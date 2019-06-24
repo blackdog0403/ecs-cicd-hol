@@ -7,6 +7,7 @@
 2. 워크스페이스의 터미널 창에서 다음의 명령어를 실행하여 Code commit reposotory를 클론한 디렉토리명을 확인합니다.
 
     ```bash
+    cd ~/environment/
     ls -al
     ```
 
@@ -46,7 +47,7 @@
     blackdog-dev:~/environment/containerhol (master) $
     ```
 
-5. 워크스페이스의 왼쪽 메뉴 탐색창에서 repository의 디렉토리를 선택하고 마우스 오른쪽 버튼을 눌러서 New File 메뉴를 눌러 새로운 파일을 추가합니다. 다시 오른쪽 버튼을 눌러 Rename을 선택하고 파일 이름을 **Dokcerfile* 로 지정합니다.
+5. 워크스페이스의 왼쪽 메뉴 탐색창에서 repository의 디렉토리를 선택하고 마우스 오른쪽 버튼을 눌러서 New File 메뉴를 눌러 새로운 파일을 추가합니다. 다시 오른쪽 버튼을 눌러 Rename을 선택하고 파일 이름을 **Dockerfile* 로 지정합니다.
 
     ![Alt](../images/cloud9/add-new-file.png "view service status")
 
@@ -56,7 +57,7 @@
 
     ```Dockerfile
     FROM nginx:latest
-    RUN  echo '<h1>Hello World</h1><' \
+    RUN  echo '<h1>Hello World</h1>' \
     >> index.html
     RUN cp /index.html /usr/share/nginx/html
     ```
@@ -103,9 +104,15 @@
 
     > "- REPOSITORY_URI=01234567890.dkr.ecr.us-west-2.amazonaws.com/containerhol/webapphol"
 
-10. buildspec 및 Dockerfile 파일을 커밋한 후에 소스 리포지토리에 푸쉬 합니다.
+10. buildspec 및 Dockerfile 파일을 커밋한 후에 소스 리포지토리에 푸쉬 합니다. 다시 위에서 작업을 하던 Cloud9의 워크스페이스로 돌아와 터미털을 열고 다음을 참조하여 username과 email 주소를 설정합니다.
 
-    - 다음을 참조하여 username과 email 주소를 설정합ㄴ디ㅏ.
+    - Git repository클론된 디렉토리로 이동합니다.
+
+    ```bash
+    cd ~/environment/containerhol/
+    ```
+
+    - git crendential을 저장하기 위하여 다음과 같이 user name과 email을 글로벌로 설정합니다.
 
     ```bash
     git config --global user.name "Kwangyoung Kim"

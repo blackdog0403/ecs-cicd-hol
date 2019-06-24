@@ -141,4 +141,4 @@
 
 ## [메인페이지로 돌아가기](../README.md)
 
-## [이전: ECR 클러스터 생성하기](create-ecr-cluster.md)
+## [이전: ECR 클러스터 생성하기](create-ecs-cluster.md)

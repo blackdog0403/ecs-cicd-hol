@@ -14,6 +14,8 @@
 
 1. 이름 페이지의 파이프라인 이름 상자에 해당 파이프라인 이름을 입력한 후 다음 단계를 선택합니다. 이 자습서에서 파이프라인 이름은 **hol-cicd** 입니다. 나머지 항목은 디폴트로 둡니다.
 
+    ![Alt](../images/codepipeline/create-pipeline.png "create pipeline")
+
 2. Add Source Stage에서는 다음과 같이 입력을 하고 Next버튼을 누릅니다.
 
     - Source provider: **AWS CodeCommit**
@@ -70,11 +72,11 @@
 
 2. 파이프라인이 배포까지 정상적으로 수행되면 다음고 같은 화면을 볼 수 있습니다.
 
-    ![Alt](../images/codepipeline/view-result.png "view service status")
+    ![Alt](../images/codepipeline/view-result.png "view service result")
 
 3. 정상적으로 배포되었다면 [https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#LoadBalancers:sort=loadBalancerName](https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#LoadBalancers:sort=loadBalancerName) 에서 hol-alb를 선택한후에 Description 탭의 DNS name을 복사하여 웹 브라우저에 붙여넣고 "Hello World"가 정상적으로 뜨는지 확인합니다.
 
-4. 이번에는 구성된 소스 리포지토리에 대한 코드를 변경하고 커밋한 후 변경 사항을 푸시합니다. Cloud9 워크 스페이스에서 다음과 같이 도커 파일을 수정해봅니다.
+4. 이번에는 구성된 소스 리포지토리에 대한 코드를 변경하고 커밋한 후 변경 사항을 푸시합니다. Cloud9 워크 스페이스에서 왼쪽의 탐색창에서 Dockerfile을 찾아서 더블 클릭하여 편집창을 열고 다음과 같이 수정합니다.
 
    - 다음과 같이 수정합니다.
 
