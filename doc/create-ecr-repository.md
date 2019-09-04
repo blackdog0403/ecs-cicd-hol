@@ -1,4 +1,4 @@
-# 
+# ECR 리포지토리 생성하기
 
 > 도커 이미지를 Amazon ECR에 푸시하려면 먼저 이를 저장할 리포지토리를 생성해야 합니다. AWS Management 콘솔 또는 AWS CLI 및 AWS SDK를 사용하여 Amazon ECR 리포지토리를 만들 수 있습니다.
 
