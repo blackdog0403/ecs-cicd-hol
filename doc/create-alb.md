@@ -1,4 +1,4 @@
-# Service 를위한 Application Load Balacer 생성하기
+# ECS Service를 위한 Application Load Balacer 생성하기
 
 1. [https://console.aws.amazon.com/ec2/에서](https://console.aws.amazon.com/ec2/에서) Amazon EC2 콘솔을 엽니다.
 
@@ -22,12 +22,20 @@
     - name: hol-tg-1
     - target type: IP
 
-9. Register Targets 은 생략하고 넘어갑니다.
+9. Advanced Health Check Setting를 클릭하고 다음 화면과 같이 입력합니다.
+    - Healthy threshhold: 3
+    - Interval : 6
+  
+     ![Alt](../images/alb/alb-advanced-check-setup.png "cloud9 afters")
 
-10. Create 버튼을 눌러서 로드 밸런서를 생성합니다.
+    > 이렇게 인터벌을 줄이면 빠르게 ALB의 타켓을 헬스 체크할 수 있습니다. 실제 워크로드는 기동되는 시간을 고려하여 Healthy threshhold, Interval 등을 설정하는 것이 좋습니다.
 
-## [다음: Service 작성하여 서비스 배포하기](create-service.md)
+10. Register Targets 은 생략하고 넘어갑니다.
+
+11. Create 버튼을 눌러서 로드 밸런서를 생성합니다.
+
+## [다음: ECS Service 작성하여 서비스 배포하기](create-service.md)
 
 ## [메인페이지로 돌아가기](../README.md)
 
-## [이전: Task Definition 작성하기](create-task-definition.md)
+## [이전: ECS Task Definition 작성하기](create-task-definition.md)

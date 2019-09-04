@@ -52,7 +52,7 @@
     - Port Range: 8080
     - Source: 0.0.0.0/0
 
-## [다음: ECR 클러스터 생성하기](create-ecs-cluster.md)
+## [다음: ECS 클러스터 생성하기](create-ecs-cluster.md)
 
 ## [메인페이지로 돌아가기](../README.md)
 

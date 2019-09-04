@@ -79,7 +79,7 @@
           - echo Logging in to Amazon ECR...
           - aws --version
           - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
-          - REPOSITORY_URI=<YOUR_ACCOUNT_ID>.dkr.ecr.us-west-2.amazonaws.com/hello-world
+          - REPOSITORY_URI=<YOUR_ACCOUNT_ID>.dkr.ecr.us-west-2.amazonaws.com/webapphol
           - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
           - IMAGE_TAG=${COMMIT_HASH:=latest}
       build:

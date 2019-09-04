@@ -1,6 +1,6 @@
-# Task Definition 생성하기
+# ECS Task Definition 작성하기
 
-## Json을 통해서 Task Definition 생성하기
+## JSON을 통해서 Task Definition 생성하기
 
 1. [https://console.aws.amazon.com/ecs/](https://console.aws.amazon.com/ecs/) 에서 Amazon ECS 콘솔을 엽니다.
 
@@ -33,7 +33,7 @@
     ],
     "networkMode": "awsvpc",
     "cpu": "256",
-    "memory": "512",
+    "memory": "256",
     "family": "hol-webapp"
     }
     ```
@@ -59,7 +59,7 @@
     ],
     "networkMode": "awsvpc",
     "cpu": "256",
-    "memory": "512",
+    "memory": "256",
     "family": "hol-webapp"
     }
     ```
@@ -132,13 +132,13 @@
 ],
 "networkMode": "awsvpc",
 "cpu": "256",
-"memory": "512",
+"memory": "256",
 "family": "hol-webapp"
 }
 ```
 
-## [다음: Service에서 사용할 pplication Load Balancer 생성하기](create-alb.md)
+## [다음: ECS Service를 위한 pplication Load Balancer 생성하기](create-alb.md)
 
 ## [메인페이지로 돌아가기](../README.md)
 
-## [이전: ECR 클러스터 생성하기](create-ecs-cluster.md)
+## [이전: ECS 클러스터 생성하기](create-ecs-cluster.md)

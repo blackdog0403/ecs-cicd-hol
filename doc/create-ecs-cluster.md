@@ -1,4 +1,4 @@
-# ECR 클러스터 생성하기
+# ECS 클러스터 생성하기
 
 1. [https://console.aws.amazon.com/ecs/](https://console.aws.amazon.com/ecs/) 에서 Amazon ECS 콘솔을 엽니다.
 

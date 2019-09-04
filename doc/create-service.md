@@ -1,4 +1,4 @@
-# Service를 생성하여 task를 배포하기
+# ECS Service를 생성하여 task를 배포하기
 
 1. [https://console.aws.amazon.com/ecs/](https://console.aws.amazon.com/ecs/)에서 Amazon ECS 콘솔을 엽니다.
 
@@ -57,4 +57,4 @@
 
 ## [메인페이지로 돌아가기](../README.md)
 
-## [이전: Task Definition 작성하기](create-alb.md)
+## [이전: ECS Service를 위한 Application Load Balacer 생성하기](create-alb.md)
