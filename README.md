@@ -34,17 +34,19 @@
 
 아래의 항목들을 차례대로 수행합니다.
 
-1. [ECR 에 도커 이미지를 위한 리포지토리 생성하기](doc/create-ecr-repository.md)
+1. (선택사항) [Cloud9으로 Docker 기초 실습하기](doc/cloud9-docker-basic.md)
 
-2. [ECR 클러스터를 위한 VPC 생성하기](doc/create-vpc.md)
+2. [ECR 에 도커 이미지를 위한 리포지토리 생성하기](doc/create-ecr-repository.md)
 
-3. [ECS 클러스터 생성하기](doc/create-ecs-cluster.md)
+3. [ECR 클러스터를 위한 VPC 생성하기](doc/create-vpc.md)
 
-4. [Task Definition 작성하기](doc/create-task-definition.md)
+4. [ECS 클러스터 생성하기](doc/create-ecs-cluster.md)
 
-5. [Service에서 사용할 Application Load Balancer 생성하기](doc/create-alb.md)
+5. [Task Definition 작성하기](doc/create-task-definition.md)
 
-6. [Service 작성하여 서비스 배포하기](doc/create-service.md)
+6. [Service에서 사용할 Application Load Balancer 생성하기](doc/create-alb.md)
+
+7. [Service 작성하여 서비스 배포하기](doc/create-service.md)
 
 ## Code Commit, Code Build, Code Pipeline으로 CI/CD 파이프라인 구성하기 (1시간 ~ 1시간 30분 소요)
 

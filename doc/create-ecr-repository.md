@@ -1,4 +1,4 @@
-# ECR 리포지토리 생성하기
+# 
 
 > 도커 이미지를 Amazon ECR에 푸시하려면 먼저 이를 저장할 리포지토리를 생성해야 합니다. AWS Management 콘솔 또는 AWS CLI 및 AWS SDK를 사용하여 Amazon ECR 리포지토리를 만들 수 있습니다.
 
@@ -24,7 +24,7 @@
 
 2. 앞에서 생성한 Cloud9의 워크스페이스에 접속하고 터미널 창을 엽니다. Cloud9 터미널 창에서 아래의 명령으를 통해서 ecr 레포지토리에 로그인을 합니다.
 
-    > 아래의 명령어를 그대로 복사해서 Cloud9의 터미널 창에 붙여넣습니다. 키보드 단축키를 사용해서 복사하여 붙여넣습니다.
+    > 아래의 명령어를 "$"문자까지 포함하여 그대로 복사해서 Cloud9의 터미널 창에 붙여넣습니다. 키보드 단축키를 사용해서 복사하여 붙여넣습니다.
 
     ```bash
     $(aws ecr get-login --no-include-email --region us-west-2)
@@ -62,4 +62,4 @@
 
 ## [메인페이지로 돌아가기](../README.md)
 
-## [이전: 워크스페이스에 IAM 역할 추가하기](attach-the-iam-role-to-your-workspace.md)
+## [이전: Cloud9으로 Docker 기초 실습하기](cloud9-docker-basic.md)
