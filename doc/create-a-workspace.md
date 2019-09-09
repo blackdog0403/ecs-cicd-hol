@@ -18,7 +18,7 @@
 
      ![Alt](../images/cloud9/c9after.png "cloud9 afters")
 
-## [다음: ECR 에 도커 이미지를 위한 리포지토리 생성하기](create-ecr-repository.md)
+## [다음: ECR 에 도커 이미지를 위한 리포지토리 생성하기](cloud9-docker-basic.md)
 
 ## [메인페이지로 돌아가기](../README.md)
 
