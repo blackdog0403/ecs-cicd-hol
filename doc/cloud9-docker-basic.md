@@ -13,7 +13,7 @@ cat << EOF > Dockerfile
 FROM nginx:latest
 RUN  echo '<h1>Hello World Version 1</h1>' \
 >> index.html
-RUN cp /index.html
+RUN cp /index.html /usr/share/nginx/www
 EOF
 ```
 
@@ -22,7 +22,7 @@ EOF
 다음의 명령어는 현재 경로(.)에 있는 Dockerfile을 mynginx라는 이미지 명으로 빌드를 한다는 의미입니다. 따로 태그를 명시하지 않았기 때문에 태그는 **latest** 가 됩니다.
 
 ```bash
-docker build mynginx .
+docker build -t mynginx .
 ```
 
 ## docker images 명령어로 호스트 머신에 있는 도커 이미지들 확인하기
