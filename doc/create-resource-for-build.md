@@ -47,7 +47,7 @@
     blackdog-dev:~/environment/containerhol (master) $
     ```
 
-5. 워크스페이스의 왼쪽 메뉴 탐색창에서 repository의 디렉토리를 선택하고 마우스 오른쪽 버튼을 눌러서 New File 메뉴를 눌러 새로운 파일을 추가합니다. 다시 오른쪽 버튼을 눌러 Rename을 선택하고 파일 이름을 **Dockerfile* 로 지정합니다.
+5. 워크스페이스의 왼쪽 메뉴 탐색창에서 repository의 디렉토리를 선택하고 마우스 오른쪽 버튼을 눌러서 New File 메뉴를 눌러 새로운 파일을 추가합니다. 다시 오른쪽 버튼을 눌러 Rename을 선택하고 파일 이름을 **Dockerfile** 로 지정합니다.
 
     ![Alt](../images/cloud9/add-new-file.png "view service status")
 
@@ -79,7 +79,7 @@
           - echo Logging in to Amazon ECR...
           - aws --version
           - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
-          - REPOSITORY_URI=<YOUR_ACCOUNT_ID>.dkr.ecr.us-west-2.amazonaws.com/webapphol
+          - REPOSITORY_URI=<YOUR_ACCOUNT_ID>.dkr.ecr.us-west-2.amazonaws.com/container/webapphol
           - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
           - IMAGE_TAG=${COMMIT_HASH:=latest}
       build:

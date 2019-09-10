@@ -137,7 +137,7 @@
 }
 ```
 
-## [다음: ECS Service를 위한 pplication Load Balancer 생성하기](create-alb.md)
+## [다음: ECS Service를 위한 application Load Balancer 생성하기](create-alb.md)
 
 ## [메인페이지로 돌아가기](../README.md)
 
