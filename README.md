@@ -28,7 +28,7 @@
 - [What is Amazon Elastic Container Registry?](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html)
 - [What Is AWS CodePipeline?](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
 
-## ECR repository 등록 및 ECS 클러스터 생성 Task Definition 등록하기 ( 40분 소요 )
+## Cloud 9 셋업하기 및 ECR 레포지토리 생성하기 ( 40분 소요 )
 
 이 단락에서는 AWS의 Web IDE인 Cloud9 워크 스페이스를 생성하고 Elastic Container Registry 서비스를 이용하여 컨테이너 이미지들을 저장할 Image Registry를 등록합니다. 또한 컨테이너를 배포할 ECS 클러스터를 위한 VPC를 생성합니다. 이번 단락에서는 Docker의 기본적인 명령어에 익숙해지는 데에 집중을 하고 다음 단락에서 만들 ECS 클러스터의 치고가 될 VPC를 준비해둡니다.
 
