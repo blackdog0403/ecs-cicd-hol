@@ -13,7 +13,7 @@ cat << EOF > Dockerfile
 FROM nginx:latest
 RUN  echo '<h1>Hello World Version 1</h1>' \
 >> index.html
-RUN cp /index.html /usr/share/nginx/www
+RUN cp /index.html /usr/share/nginx/html
 EOF
 ```
 
