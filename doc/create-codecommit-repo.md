@@ -4,7 +4,7 @@
 
 2. Repositories 페이지에서 Create repository를 선택합니다.
 
-3. 리포지토리 생성 페이지의 Name에 **container-hol-test**  등과 같이 입력합니다. 이미 존재하는 repository면 다른 이름을 넣어서 생성합니다.
+3. 리포지토리 생성 페이지의 Name에 **containerhol**  등과 같이 입력합니다. 이미 존재하는 repository면 다른 이름을 넣어서 생성합니다.
 
 4. (선택 사항) 설명에 리포지토리 설명을 입력합니다. 그러면 사용자들이 리포지토리의 용도를 식별하는 데 도움이 됩니다.
 
