@@ -82,7 +82,7 @@
 
     ```Dockerfile
     FROM nginx:latest
-    RUN  echo '<h1>Hello World version2 </h1><' \
+    RUN  echo '<h1>Hello World version2 </h1>' \
     >> index.html
     RUN cp /index.html /usr/share/nginx/html
     ```
