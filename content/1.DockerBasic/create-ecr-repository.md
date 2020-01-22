@@ -1,4 +1,8 @@
-# ECR 리포지토리 생성하기
+---
+title: "ECR 리포지토리 생성하기"
+date: 2020-01-22T09:46:32+09:00
+draft: true
+---
 
 > 도커 이미지를 Amazon ECR에 푸시하려면 먼저 이를 저장할 리포지토리를 생성해야 합니다. AWS Management 콘솔 또는 AWS CLI 및 AWS SDK를 사용하여 Amazon ECR 리포지토리를 만들 수 있습니다.
 
@@ -57,9 +61,3 @@
     cf5b3c6798f7: Pushed
     latest: digest: sha256:079aa93463d2566b7a81cbdf856afc6d4d2a6f9100ca3bcbecf24ade92c9a7fe size: 948
     ```
-
-## [다음: ECR 클러스터를 위한 VPC 생성하기](create-vpc.md)
-
-## [메인페이지로 돌아가기](../README.md)
-
-## [이전: Cloud9으로 Docker 기초 실습하기](cloud9-docker-basic.md)

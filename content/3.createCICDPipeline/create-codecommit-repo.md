@@ -1,4 +1,9 @@
-# CodeCommit 리포지토리 생성하기
+---
+title: "CodeCommit으로 Git 리포지토리 생성하기"
+date: 2020-01-22T09:46:32+09:00
+draft: true
+weight: 100
+---
 
 1. 다음의 링크에서 [https://console.aws.amazon.com/codesuite/codecommit/home](https://console.aws.amazon.com/codesuite/codecommit/home) 에서 CodeCommit 콘솔을 엽니다.
 
@@ -63,9 +68,3 @@
      ```
 
 9. 정상적으로 Code Commit 리포지토리를 생성하였으며 테스트를 완료했습니다.
-
-## [다음: Code Commit Repository에 Dockefile 및 buildspec.yaml 추가하기](create-resource-for-build.md)
-
-## [메인페이지로 돌아가기](../README.md)
-
-## [이전: Service 작성하여 서비스 배포하기](create-service.md)

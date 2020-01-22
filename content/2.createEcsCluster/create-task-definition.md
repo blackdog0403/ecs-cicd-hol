@@ -1,4 +1,9 @@
-# ECS Task Definition 작성하기
+---
+title: "ECS Task Definition 작성하기"
+date: 2020-01-22T09:46:32+09:00
+draft: true
+weight: 200
+---
 
 ## JSON을 통해서 Task Definition 생성하기
 
@@ -136,9 +141,3 @@
 "family": "hol-webapp"
 }
 ```
-
-## [다음: ECS Service를 위한 application Load Balancer 생성하기](create-alb.md)
-
-## [메인페이지로 돌아가기](../README.md)
-
-## [이전: ECS 클러스터 생성하기](create-ecs-cluster.md)

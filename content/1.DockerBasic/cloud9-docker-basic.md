@@ -1,4 +1,8 @@
-# Cloud9으로 Docker 기초 실습하기
+---
+title: "Docker 기초 실습하기"
+date: 2020-01-22T09:46:32+09:00
+draft: true
+---
 
 이 장에서는 가장 기초적인 도커 명령어들을 학습을 해보도록 할 예정입니다. 더 상세한 명령어를 원한다면 [docker 홈페이지](https://docs.docker.com/)에 가서 문서를 참조하시면서 더 상세히 보도록 합니다. 아래의 가이드를 읽어가면서 도커 명령어들을 하나씩 실행을 해보도록 합니다.
 
@@ -41,7 +45,7 @@ docker images
 docker search nginx
 ```
 
-![Alt](/images/cloud9/cloud9-docker-search.png "cloud9 docker search")
+![Alt](cloud9/cloud9-docker-search.png "cloud9 docker search")
 
 ## docker run 명령어로 도커 이미지 실행하기
 
@@ -127,9 +131,3 @@ docker rm mynginx
 ```bash
 docker rmi mynginx:latest
 ```
-
-## [다음: ECR 리포지토리 생성하기](create-ecr-repository.md)
-
-## [메인페이지로 돌아가기](../README.md)
-
-## [이전: IAM 유저 생성하기](create-a-workspace.md)

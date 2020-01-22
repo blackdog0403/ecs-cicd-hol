@@ -1,4 +1,9 @@
-# ECS Service를 위한 Application Load Balacer 생성하기
+---
+title: "ECS Service를 위한 Application Load Balacer 생성하기"
+date: 2020-01-22T09:46:32+09:00
+draft: true
+weight: 300
+---
 
 1. [https://console.aws.amazon.com/ec2/에서](https://console.aws.amazon.com/ec2/에서) Amazon EC2 콘솔을 엽니다.
 
@@ -33,9 +38,3 @@
 10. Register Targets 은 생략하고 넘어갑니다.
 
 11. Create 버튼을 눌러서 로드 밸런서를 생성합니다.
-
-## [다음: ECS Service 작성하여 서비스 배포하기](create-service.md)
-
-## [메인페이지로 돌아가기](../README.md)
-
-## [이전: ECS Task Definition 작성하기](create-task-definition.md)

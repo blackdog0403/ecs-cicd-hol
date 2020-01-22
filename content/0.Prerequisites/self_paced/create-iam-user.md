@@ -1,4 +1,9 @@
-# AWS 계정 생성하기
+---
+title: "AWS 계정 생성하기"
+date: 2020-01-22T09:46:32+09:00
+draft: true
+weight: 1
+---
 
 1. AWS 계정을 가지고 있지 않다면 :[클릭하여 AWS 계정을 만듭니다](https://aws.amazon.com/getting-started/)
 
@@ -6,20 +11,16 @@
 
 3. 사용자 상세 내역을 입력합니다.
 
-    ![Alt](/images/iam/iam-1-create-user.png "Title")
+    ![Alt](iam/iam-1-create-user.png "Title")
 
 4. AdministratorAccess IAM 정책츨 추가합니다.
 
-     ![Alt](/images/iam/iam-2-attach-policy.png "add policy")
+     ![Alt](iam/iam-2-attach-policy.png "add policy")
 
 5. Create User 버튼을 클릭해서 사용자를 생성합니다.
 
-     ![Alt](/images/iam/iam-3-create-user.png "create user")
+     ![Alt](iam/iam-3-create-user.png "create user")
 
 6. 로그인을 위한 URL을 메모해둡니다.
 
-     ![Alt](/images/iam/iam-4-save-url.png "create user")
-
-## [다음: 워크스페이스 생성하기](create-a-workspace.md)
-
-## [메인페이지로 돌아가기](../README.md)
+     ![Alt](iam/iam-4-save-url.png "create user")

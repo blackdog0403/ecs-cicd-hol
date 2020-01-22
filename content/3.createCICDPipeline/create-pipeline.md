@@ -1,6 +1,11 @@
-# Cope Pipeline을 생성하여 ECS에 지속적인 배포하기
+---
+title: "Cope Pipeline을 통해 ECS에 지속적인 빌드 및 배포하기"
+date: 2020-01-22T09:46:32+09:00
+draft: true
+weight: 300
+---
 
-    CodePipeline 마법사를 사용하여 파이프라인 단계를 생성하고, 소스 리포지토리를 ECS 서비스에 연결합니다.
+CodePipeline 마법사를 사용하여 파이프라인 단계를 생성하고, 소스 리포지토리를 ECS 서비스에 연결합니다.
 
 ## Code Pipeline으로 새로운 파이프라인 생성
 
@@ -108,7 +113,3 @@
 7. [https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#LoadBalancers:sort=loadBalancerName](https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#LoadBalancers:sort=loadBalancerName) 로 이동하여 hol-alb를 선택한후에 Description 탭의 DNS name을 복사하여 웹 브라우저에 붙여넣고 "Hello World version2 "가 정상적으로 뜨는지 확인합니다.
 
 실습을 완료하였습니다.
-
-## [메인페이지로 돌아가기](../README.md)
-
-## [이전: Code Commit Repository에 Dockefile 및 buildspec.yaml 추가하기](create-resource-for-build.md)
