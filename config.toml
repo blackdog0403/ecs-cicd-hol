@@ -1,3 +1,31 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "/"
+languageCode = "ko-KR"
+defaultContentLanguage = "ko"
+
+title = "AWS Analytics 서비스 워크샵"
+theme = "hugo-theme-learn"
+themesdir = "themes"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+#ignoreFiles = [ "\\.*lab3\\.*" ]
+
+[params]
+  description = "AWS Analytics Services Workshop"
+  author = "Inhwan Hwang"
+  showVisitedLinks = true
+  disableBreadcrumb = false
+  disableNextPrev = false
+  themeVariant = "aws"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[Languages.ko]
+title = ""
+weight = 1
+languageName = "한국어"
+
+[[Languages.ko.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bullhorn'></i> 크레딧"
+url = "/credits/"
+weight = 30
