@@ -1,8 +1,8 @@
-baseURL = "/"
+baseURL = "/public/"
 languageCode = "ko-KR"
 defaultContentLanguage = "ko"
 
-title = "AWS Analytics 서비스 워크샵"
+title = "AWS ECS Workshop"
 theme = "hugo-theme-learn"
 themesdir = "themes"
 metaDataFormat = "yaml"
@@ -10,7 +10,7 @@ defaultContentLanguageInSubdir= true
 #ignoreFiles = [ "\\.*lab3\\.*" ]
 
 [params]
-  description = "AWS Analytics Services Workshop"
+  description = "AWS ECS Workshop"
   author = "Inhwan Hwang"
   showVisitedLinks = true
   disableBreadcrumb = false
@@ -25,7 +25,23 @@ title = ""
 weight = 1
 languageName = "한국어"
 
+
 [[Languages.ko.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bullhorn'></i> 크레딧"
-url = "/credits/"
+name = "<i class='fas fa-chalkboard'></i> EKS Workshop"
+url = "https://eksworkshop.com"
+weight = 5
+
+[[Languages.ko.menu.shortcuts]]
+name = "<i class='fas fa-chalkboard'></i> AppMesh Workshop"
+url = "https://appmeshworkshop.com"
+weight = 6
+
+[[Languages.ko.menu.shortcuts]]
+name = "<i class='fab fa-github'></i> GitHub Project"
+url = "https://github.com/blackdog0403/ecs-cicd-hol.git"
 weight = 30
+
+[[Languages.ko.menu.shortcuts]]
+name = "<i class='fas fa-bookmark'></i> More Resources"
+url = "/more_resources"
+weight = 50

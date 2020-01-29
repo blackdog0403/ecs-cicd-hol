@@ -1,5 +1,5 @@
 {
-  "name": "eksworkshop",
+  "name": "ecsworkshop",
   "version": "1.0.0",
   "homepage": "https://github.com/blackdog0403/ecs-cicd-hol#readme",
   "bugs": {
@@ -14,7 +14,8 @@
   "scripts": {
     "theme": "git submodule init && git submodule update",
     "drafts": "hugo server -w -v -DF --disableFastRender --enableGitInfo --bind=0.0.0.0",
-    "server": "hugo server -w -v --enableGitInfo --bind=0.0.0.0 --port=3000 --navigateToChanged",
+    "server-org": "hugo server -w -v --enableGitInfo --bind=0.0.0.0 --port=3000 --navigateToChanged",
+    "server": "hugo serve -w -D=true -t=hugo-theme-learn -p 3000 -b localhost/public",
     "build": "hugo -v",
     "test": "docker run -v $PWD/public/:/public 18fgsa/html-proofer /public --empty-alt-ignore --allow-hash-href",
     "deploy": "aws s3 sync public/ s3://us-east-1-eksworkshop.com/ --delete",

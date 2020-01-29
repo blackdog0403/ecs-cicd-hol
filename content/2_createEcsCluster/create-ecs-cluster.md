@@ -1,4 +1,9 @@
-# ECS 클러스터 생성하기
+---
+title: "ECS 클러스터 생성하기"
+date: 2020-01-22T09:46:32+09:00
+draft: true
+weight: 100
+---
 
 1. [https://console.aws.amazon.com/ecs/](https://console.aws.amazon.com/ecs/) 에서 Amazon ECS 콘솔을 엽니다.
 
@@ -24,9 +29,3 @@
 8. ContainerHOL 클러스터의 대쉬보드 화면에서 각 탭을 눌러 현재 클러스터의 상태를 확인합니다. 다음과 같이 클러스터를 구성하는 ec2 인스턴스의 상태가 active면 정상적으로 생성된 것입니다.
 
     ![Alt](/public/images/ecs/view-cluster-status.png "generate git credential")
-
-## [다음: Task Definition 작성하기](create-task-definition.md)
-
-## [메인페이지로 돌아가기](../README.md)
-
-## [ECR 에 도커 이미지를 위한 리포지토리 생성하기](create-ecr-repository.md)

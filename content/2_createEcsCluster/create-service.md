@@ -1,4 +1,9 @@
-# ECS Service를 생성하여 task를 배포하기
+---
+title: "ECS Service를 생성하여 task를 배포하기"
+date: 2020-01-22T09:46:32+09:00
+draft: true
+weight: 400
+---
 
 1. [https://console.aws.amazon.com/ecs/](https://console.aws.amazon.com/ecs/)에서 Amazon ECS 콘솔을 엽니다.
 
@@ -52,9 +57,3 @@
 14. Load Balacer 페이지로 이동하여 DNS name의 URL를 복사하여 웹브라우저의 주소창에 붙여놓고 접속합니다. 다음과 같이 화면이 뜨면 정상적으로 배포가 된 것 입니다.
 
     ![Alt](/public/images/ec2/view-result.png "view target group")
-
-## [다음: Code Commit에 Git Repository 생성하고 Cloud9에 형상 clone 하기](create-codecommit-repo.md)
-
-## [메인페이지로 돌아가기](../README.md)
-
-## [이전: ECS Service를 위한 Application Load Balacer 생성하기](create-alb.md)
