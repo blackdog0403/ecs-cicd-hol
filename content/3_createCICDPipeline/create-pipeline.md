@@ -1,7 +1,7 @@
 ---
 title: "Cope Pipeline을 통해 ECS에 지속적인 빌드 및 배포하기"
 date: 2020-01-22T09:46:32+09:00
-draft: true
+draft: false
 weight: 300
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "ECS 클러스터 생성하기"
 date: 2020-01-22T09:46:32+09:00
-draft: true
+draft: false
 weight: 100
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Code Commit Repository에 Dockefile 및 buildspec.yaml 추가하기"
 date: 2020-01-22T09:46:32+09:00
-draft: true
+draft: false
 weight: 200
 ---
 

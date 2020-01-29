@@ -1,7 +1,7 @@
 ---
 title: "워크스페이스에 IAM 역할 추가하기"
 date: 2020-01-22T09:46:32+09:00
-draft: true
+draft: false
 weight: 160
 ---
 

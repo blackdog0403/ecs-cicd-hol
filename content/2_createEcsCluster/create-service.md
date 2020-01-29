@@ -1,7 +1,7 @@
 ---
 title: "ECS Service를 생성하여 task를 배포하기"
 date: 2020-01-22T09:46:32+09:00
-draft: true
+draft: false
 weight: 400
 ---
 
