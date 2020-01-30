@@ -1,13 +1,13 @@
 ---
-title: "AWS 계정 생성하기"
+title: "AWS 계정 생성 및 IAM 유저 생성"
 date: 2020-01-22T09:46:32+09:00
-draft: true
+draft: false
 weight: 1
 ---
 
 1. AWS 계정을 가지고 있지 않다면 :[클릭하여 AWS 계정을 만듭니다](https://aws.amazon.com/getting-started/)
 
-2. AWS 계정을 가지고 있다면 AWS 계정에 대한 관리자 권한이 있는 IAM 사용자로서 나머지 작업장 단계를 수행합니다: [실습을 위하여 새로운 IAM 사용자를 만듭니다](https://console.aws.amazon.com/iam/home?#/users$new)
+2. AWS 계정을 가지고 있다면 AWS 계정에 대한 관리자 권한이 있는 IAM 사용자로서 나머지 작업장 단계를 수행합니다: [실습을 위하여 이 링크를 클릭하여 새로운 IAM 사용자를 만듭니다](https://console.aws.amazon.com/iam/home?#/users$new)
 
 3. 사용자 상세 내역을 입력합니다.
 

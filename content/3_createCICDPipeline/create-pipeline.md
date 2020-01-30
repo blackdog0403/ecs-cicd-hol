@@ -34,7 +34,7 @@ CodePipeline 마법사를 사용하여 파이프라인 단계를 생성하고, �
 3. Add buil stage에서는 다음과 같이 입력을 하고 Next 버튼을 누릅니다.
   
     - Build provider: **AWS CodeBuild**
-    - Region: **US West - (Oregon)**
+    - Region: **us-west-2 - (Oregon)**
     - Project name 오른쪽의 Create a new build project를 선택합니다. 빌드 프로젝트 생성시에는 다음과 같이 입력 및 선택을 하고 나머지는 디폴트로 둡니다
         - Project Name: hol-build
         - Environment Image: **Managed Image**
@@ -49,7 +49,7 @@ CodePipeline 마법사를 사용하여 파이프라인 단계를 생성하고, �
 
 4. Add to deploy stage에서는 다음과 같이 입력을 합니다. 나머지는 디폴트로 남겨둡니다.
     - Deploy provider : **Amazon ECS**
-    - Region: **US West - (Oregon)**
+    - Region: **us-west-2 - (Oregon)**
     - Cluster name: **ContainerHOL**
     - Service name: **hol-webapp-service**
 

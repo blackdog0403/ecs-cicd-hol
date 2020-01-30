@@ -1,11 +1,11 @@
 ---
 title: "워크스페이스에 IAM 역할 생성하기"
 date: 2020-01-22T09:46:32+09:00
-draft: false
+draft: t
 weight: 150
 ---
 
-## IAM 역활 생성하기
+## (생략할 것 )IAM 역활 생성하기
 
 1. 이 [링크를 클릭하여 Administrator Access 를 가진 IAM 역할을 생성합니다.](https://console.aws.amazon.com/iam/home#/roles$new?step=review&commonUseCase=EC2%2BEC2&selectedUseCase=EC2&policies=arn:aws:iam::aws:policy%2FAdministratorAccess)
 

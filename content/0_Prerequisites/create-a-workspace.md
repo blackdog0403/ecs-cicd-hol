@@ -9,12 +9,12 @@ weight: 140
 >
 > **클라우드 9 도메인에 대해 Ad blocker나 자바스크립트 해제기 및 추적 차단기가 작동되면 워크스페이스에 연결하는데 영향을 끼칠 수 있습니다. Cloud9에는 타사 쿠키가 필요하여 도메인을 [화이트리스트로 만들 수 있습니다.](https://docs.aws.amazon.com/cloud9/latest/user-guide/troubleshooting.html#troubleshooting-env-loading)**
 
-1. 이 실습은 seoul region을 활용해서 이루어 질 것 입니다. 다음의 링크로 이동하여 Cloud9 워크 스페이스를 생성합니다.
+1. 이 실습은 Oregon region을 활용해서 이루어 질 것 입니다. 다음의 링크로 이동하여 Cloud9 워크 스페이스를 생성합니다.
 
-    [https://us-west-2.console.aws.amazon.com/cloud9/home?region=ap-northeast-2](https://us-west-2.console.aws.amazon.com/cloud9/home?region=ap-northeast-2)
+    [https://us-west-2.console.aws.amazon.com/cloud9/home?region=us-west-2](https://us-west-2.console.aws.amazon.com/cloud9/home?region=us-west-2)
 
 2. Create environment 버튼을 클릭합니다.
-3. Name 에 containerhol 등과 같은 형식으로 입력합니다. 다른 항목은 디폴트로 내버려둡니다.
+3. Name 에 **containerhol** 로 입력합니다. 다른 항목은 디폴트로 내버려둡니다.
 4. 워크스페이스 생성이 되면 welcome 탭을 닫고 새로운 터미널을 열어서 개발 환경을 커스터 마이징 합니다.
 
      ![Alt](/public/images/cloud9/c9before.png "cloud9 before")

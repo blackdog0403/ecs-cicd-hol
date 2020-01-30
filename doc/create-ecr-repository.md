@@ -6,7 +6,7 @@
 
 1. [https://console.aws.amazon.com/ecr/repositories](https://console.aws.amazon.com/ecr/repositories) 에서 Amazon ECR 콘솔을 엽니다.
 
-2. 오른쪽 상단의 탐색 모음에서 리포지토리를 생성할 리전 US WEST (oregon) 를 선택합니다.
+2. 오른쪽 상단의 탐색 모음에서 리포지토리를 생성할 리전 us-west-2 (oregon) 를 선택합니다.
 
 3. 탐색 창에서 Repositories를 선택합니다.
 
