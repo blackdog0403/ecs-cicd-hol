@@ -11,7 +11,7 @@ defaultContentLanguageInSubdir= true
 
 [params]
   description = "AWS ECS Workshop"
-  author = "Inhwan Hwang"
+  author = "Kwangyoung Kim"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
