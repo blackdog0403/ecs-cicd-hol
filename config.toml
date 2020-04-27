@@ -11,11 +11,12 @@ defaultContentLanguageInSubdir= true
 
 [params]
   description = "AWS ECS Workshop"
-  author = "Kwangyoung Kim"
-  showVisitedLinks = true
+  showVisitedLinks = false
   disableBreadcrumb = false
   disableNextPrev = false
   themeVariant = "aws"
+  disableInlineCopyToClipBoard = false
+  author = "Kwangyoung Kim"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
