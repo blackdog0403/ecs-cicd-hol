@@ -1,4 +1,4 @@
-baseURL = "/public/"
+baseURL = "/"
 languageCode = "ko-KR"
 defaultContentLanguage = "ko"
 googleAnalytics = "UA-164685676-1"

@@ -15,7 +15,7 @@
     "theme": "git submodule init && git submodule update",
     "drafts": "hugo server -w -v -DF --disableFastRender --enableGitInfo --bind=0.0.0.0",
     "server-org": "hugo server -w -v --enableGitInfo --bind=0.0.0.0 --port=3000 --navigateToChanged",
-    "server": "hugo serve -w -D=true -p 3000 -b localhost/public",
+    "server": "hugo serve -w -D=true -p 3000 -b localhost",
     "build": "hugo -v",
     "test": "docker run -v $PWD/public/:/public 18fgsa/html-proofer /public --empty-alt-ignore --allow-hash-href",
     "deploy": "aws s3 sync public/ s3://containerhero.io/public --delete --acl public-read",
