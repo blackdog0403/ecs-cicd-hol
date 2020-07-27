@@ -6,19 +6,19 @@
 
 3. 사용자 상세 내역을 입력합니다.
 
-    ![Alt](/public/images/iam/iam-1-create-user.png "Title")
+    ![Alt](/images/iam/iam-1-create-user.png "Title")
 
 4. AdministratorAccess IAM 정책츨 추가합니다.
 
-     ![Alt](/public/images/iam/iam-2-attach-policy.png "add policy")
+     ![Alt](/images/iam/iam-2-attach-policy.png "add policy")
 
 5. Create User 버튼을 클릭해서 사용자를 생성합니다.
 
-     ![Alt](/public/images/iam/iam-3-create-user.png "create user")
+     ![Alt](/images/iam/iam-3-create-user.png "create user")
 
 6. 로그인을 위한 URL을 메모해둡니다.
 
-     ![Alt](/public/images/iam/iam-4-save-url.png "create user")
+     ![Alt](/images/iam/iam-4-save-url.png "create user")
 
 ## [다음: 워크스페이스 생성하기](create-a-workspace.md)
 

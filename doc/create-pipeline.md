@@ -14,7 +14,7 @@
 
 1. 이름 페이지의 파이프라인 이름 상자에 해당 파이프라인 이름을 입력한 후 다음 단계를 선택합니다. 이 자습서에서 파이프라인 이름은 **hol-cicd** 입니다. 나머지 항목은 디폴트로 둡니다.
 
-    ![Alt](/public/images/codepipeline/create-pipeline.png "create pipeline")
+    ![Alt](/images/codepipeline/create-pipeline.png "create pipeline")
 
 2. Add Source Stage에서는 다음과 같이 입력을 하고 Next버튼을 누릅니다.
 
@@ -68,11 +68,11 @@
 
 1. 다음의 링크로 [https://us-west-2.console.aws.amazon.com/codesuite/codepipeline/pipelines?region=us-west-2](https://us-west-2.console.aws.amazon.com/codesuite/codepipeline/pipelines?region=us-west-2) 이동하여 hol-cicd를 선택하고 오른쪽 상단의 release changes를 선택합니다.
 
-    ![Alt](/public/images/codepipeline/run-release.png "view service status")
+    ![Alt](/images/codepipeline/run-release.png "view service status")
 
 2. 파이프라인이 배포까지 정상적으로 수행되면 다음고 같은 화면을 볼 수 있습니다.
 
-    ![Alt](/public/images/codepipeline/view-result.png "view service result")
+    ![Alt](/images/codepipeline/view-result.png "view service result")
 
 3. 정상적으로 배포되었다면 [https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#LoadBalancers:sort=loadBalancerName](https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#LoadBalancers:sort=loadBalancerName) 에서 hol-alb를 선택한후에 Description 탭의 DNS name을 복사하여 웹 브라우저에 붙여넣고 "Hello World"가 정상적으로 뜨는지 확인합니다.
 

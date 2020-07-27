@@ -10,7 +10,7 @@
 
 4. 화면을 아래로 스크롤 해서 Configure via json 버튼을 누릅니다.
 
-    ![Alt](/public/images/ecs/create-task-definition.png "create task definition")
+    ![Alt](/images/ecs/create-task-definition.png "create task definition")
 
 5. 윈도우즈 혹은 Mac에서 에디터를 열어서 아래의 텍스트를 붙여넣습니다.  YOUR_IMAGE_URI에 앞의 실습에서 생성한 ECR 리포지토리 URI를 입력합니다.
 
@@ -70,7 +70,7 @@
 
 9. 완료가 되면 다음과 같은 화면을 확인할 수 있습니다. 각 항목을 보고 원하는 스펙으로 생성이 됐는지 확인을 해봅니다.
 
-    ![Alt](/public/images/ecs/result-task-definition.png "create task definition")
+    ![Alt](/images/ecs/result-task-definition.png "create task definition")
 
 ---
 
@@ -84,7 +84,7 @@
 
 2. 상단에서 AWS service  아래쪽에서 "Elastic Container Service"를 선택하고 하단의 Select your use case 메뉴 아래의 **"Elastic Container Service Task"를 선택하고 Next 버튼을 클릭합니다.
 
-    ![Alt](/public/images/iam/create-iam-role-for-ecs.png "create-iam-role-for-ecs")
+    ![Alt](/images/iam/create-iam-role-for-ecs.png "create-iam-role-for-ecs")
 
 3. **"AmazonECSTaskExecutionRolePolicy"** 를 Filter Policies에 입력하고 체크를 한 다음에 Next 버튼을 클릭합니다.
 

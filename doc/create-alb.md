@@ -26,7 +26,7 @@
     - Healthy threshhold: 3
     - Interval : 6
   
-     ![Alt](/public/images/alb/alb-advanced-check-setup.png "cloud9 afters")
+     ![Alt](/images/alb/alb-advanced-check-setup.png "cloud9 afters")
 
     > 이렇게 인터벌을 줄이면 빠르게 ALB의 타켓을 헬스 체크할 수 있습니다. 실제 워크로드는 기동되는 시간을 고려하여 Healthy threshhold, Interval 등을 설정하는 것이 좋습니다.
 

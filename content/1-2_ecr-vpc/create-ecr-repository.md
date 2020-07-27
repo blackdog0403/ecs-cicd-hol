@@ -22,7 +22,7 @@ draft: false
 
 1. 생성한 리포지토리를 선택하고 오른쪽 상단의 **View push commands(푸시 명령 보기)** 를 선택하여 새 리포지토리에 푸시하는 단계를 봅니다. 다음과 같은 화면을 볼 수 있습니다.
 
-    ![Alt](/public/images/ecr/view-push-commands.png "generate git credential")
+    ![Alt](/images/ecr/view-push-commands.png "generate git credential")
 
     위의 명령어들을 이용하여 직접 ECR 리포지토리에 nginx 도커 이미지를 푸쉬해보도록 합니다.
 

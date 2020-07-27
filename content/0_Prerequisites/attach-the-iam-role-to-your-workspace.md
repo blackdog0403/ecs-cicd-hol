@@ -11,9 +11,9 @@ weight: 160
 2. 
 3. 인스턴스를 선택하고  Actions / Instance Settings / Attach/Replace IAM Role 을 차례대로 선택합니다.
 
-     ![Alt](/public/images/iam/intance-role.png "cloud9 afters")
+     ![Alt](/images/iam/intance-role.png "cloud9 afters")
 
 4. IAR role 항목 오른쪽의 드롭 다운 버튼을 눌러서 **containerhol-admin**을 선택하고 apply 버튼을 누릅니다.
 
-     ![Alt](/public/images/iam/attach-role.png "cloud9 afters")
+     ![Alt](/images/iam/attach-role.png "cloud9 afters")
 

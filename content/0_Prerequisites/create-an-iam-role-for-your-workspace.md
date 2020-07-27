@@ -17,4 +17,4 @@ weight: 150
 
 5. Name에 **containerhol-admin** 을 입력하고 Create Role 버튼을 누릅니다.
 
-     ![Alt](/public/images/iam/create-role.png "cloud9 afters")
+     ![Alt](/images/iam/create-role.png "cloud9 afters")

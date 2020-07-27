@@ -49,7 +49,7 @@
 
 5. 워크스페이스의 왼쪽 메뉴 탐색창에서 repository의 디렉토리를 선택하고 마우스 오른쪽 버튼을 눌러서 New File 메뉴를 눌러 새로운 파일을 추가합니다. 다시 오른쪽 버튼을 눌러 Rename을 선택하고 파일 이름을 **Dockerfile** 로 지정합니다.
 
-    ![Alt](/public/images/cloud9/add-new-file.png "view service status")
+    ![Alt](/images/cloud9/add-new-file.png "view service status")
 
     > 확장자와 대소문자에 유의해서 입력합니다. 파일명은 **Dockerfile** 입니다. 확장자가 없습니다.
 
