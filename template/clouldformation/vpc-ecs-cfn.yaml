@@ -114,6 +114,7 @@ Resources:
         ToPort: 443
         CidrIp: 0.0.0.0/0      
 
+
 Outputs:
   VPC:
     Description: A reference to the created VPC

@@ -4,54 +4,33 @@ date: 2020-01-22T09:46:32+09:00
 draft: false
 ---
 
-## VPC 생성하기
+## Cloud Formation Template을 활용한 ECS용 VPC 생성
 
-1. AWS 관리 콘솔에서 접속합니다.
-2. VPC에 접속합니다.
-3. 네비게이션 메뉴에서 your VPCs를 선택하고 Create VPC 버튼을 클릭합니다.
-4. Create VPC 화면에서 다음과 같이 입력한 후 Create 버튼을 클릭합니다
-    - Name tag: **ContainerHol**
-    - IPv4 CIDR block: **10.0.0.0/16**
+본격적으로 Amazon ECS를 이용하여 클러스터를 구축하고 컨테이너라이제이션 된 앱을 배포하기 전에 IAC (Infrastructure As Code ) 서비스인 Aws Cloud Formation을 이용하여 Amazon ECS 클러스터를 배포하기 위한 VPC를 생성합니다. ECS 클러스터 셍상과 그 외 다른 설정 역시 Cloud formation으로 구성을 할 수 있지만 실습을 목적으로 불필요한 부분만 Cloud Foramtation으로 작성을 하도록 구성하였습니다.
 
-### Internet Gateway 생성하고 VPC에 연결하기
 
-1. 네비게이션 메뉴에서 Internet Gateways를 선택하고 Create internet gateway를 클릭합니다.
-    - Name tag: **ContainerIGW**
-2. 생성된 Intenet Gateway를 선택하고 Actions 버튼을 클릭한 후 Attach to VPC를 선택합니다.
-3. VPC에서는 ContainerHol 선택하고 Attach 버튼을 클릭합니다.
+| Launch template |  |
+| ------ |:------:|
+| VPC For Amazon ECS | [![Launch Stack](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=ContainerHOL&templateURL=https://s3.ap-northeast-2.amazonaws.com/containerhero.io/template/vpc-ecs-cfn.yaml) |
 
-### Subnet 생성하기
+1. 위 테이블의 버튼을 클릭하여 아래와 같은 Cloud Formation 화면이 뜨는지 확인합니다. 리전이 정상적으로 **us-west-2**로 떠 있는지 확인을 하도록 합니다.
 
-1. 네비게이션 메뉴에서 Subnets을 선택하고 Create subnet을 클릭합니다.
-2. Create subnet 화면에서 다음과 같이 입력한 후 Create 버튼을 클릭합니다:
-    - Name tag: HolSubnetA
-    - VPC: ContainerHol
-    - Availability Zone: us-west-2a
-    - IPv4 CIDR block: 10.0.0.0/24
-3. Create subnet 화면에서 다음과 같이 입력한 후 Create 버튼을 클릭합니다:
-    - Name tag: HolSubnetB
-    - VPC: ContainerHol
-    - Availability Zone: us-west-2b
-    - IPv4 CIDR block: 10.0.1.0/24
+    ![Alt](/images/cloudformation/cfn-console.png "cloud formation")
 
-### Route table 설정하기
+2. 위의 화면을 확인하였으면 next 버튼을 눌러서 다음 화면으로 진행합니다.
 
-1. 네비게이션 메뉴에서 Route Table을 클릭한 후 **ContainerHol** VPC의 Route Table을 선택하고, 하단에서 Routes 탭을 클릭합니다.
+    ![Alt](/images/cloudformation/cfn-console-parameter.png "cloud formation")
 
-2. Edit routes 버튼을 클릭한 후 다음 화면에서 Add Route 버튼을 클릭합니다.
-3. 다음과 같이 입력한 후 Save 버튼을 클릭합니다:
-    - Destination: **0.0.0.0/0**
-    - Target: **ContainerIGW**
+3. 위의 화면을 확인하고 디폴트 값은 변경하지 않고 next 버튼을 눌러서 다음으로 진행합니다.
 
-### Security Group 설정하기
+4. Configure stack options 및 Advanced options 역시 손대지 않고 next 버튼을 눌러서 다음화면으로 진행한 다음 화면을 아래쪽으로 스크롤하여서 **create-stack** 버튼을 눌러서 VPC를 생성합니다. 
 
-1. 네비게이션 메뉴에서 Security Groups를 선택합니다.
-2. Security Group 목록에서 ContainerHol VPC의 Default Security Group을 선택합니다.
-3. 화면 하단에서 Inbound Rules를 선택한 후 Edit rules 버튼을 클릭합니다.
-4. Add rule을 누르고 아래 2개의 rule을 입력합니다:
-    - Type: HTTP
-    - Port Range: 80
-    - Source: 0.0.0.0/0
-    - Type: Custom TCP Rule
-    - Port Range: 8080
-    - Source: 0.0.0.0/0
+    ![Alt](/images/cloudformation/cfn-console-stack-on-progress.png "cloud formation")
+
+5. 정상적으로 진행을 했으면 위와 같은 화면을 볼 수 있습니다. status의 상태를 보면 **CREATE IN PROGRESS** 로 아직 스택의 리소스들을 생성중임을 확인할 수 있습니다. 
+
+    ![Alt](/images/cloudformation/cfn-console-created.png "cloud formation")
+
+6. 오른쪽 상단의 새로 고침 버튼을 누르면서 스택이 완성되길 기다리면 위와 화면과 같이 **CREATE_COMPLETE** 상태가 된 것을 확인할 수 있습니다. **Outputs* Tab을 선택하여 어떤 리소스들이 생성됐는지 확인을 해봅니다.
+
+

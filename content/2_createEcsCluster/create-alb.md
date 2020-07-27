@@ -17,7 +17,7 @@ weight: 300
 5. 다음과 같이 Configure Load Balancer 페이지를 완료합니다. 나머지는 다 디폴트로 둡니다.
 
     - name: hol-alb
-    - vpc: ContainerHol
+    - vpc: ContainerHOL
     - Availability Zones: us-west-2a, us-west-2b 체크
 
 6. Security Group: vpc에 연결된 디폴트 보안 그룹 선택하고 다음으로 넘어갑니다.
