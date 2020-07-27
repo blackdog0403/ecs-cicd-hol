@@ -17,15 +17,19 @@ weight: 100
 
     - Cluster name: **ContainerHol**
     - Number of instances: **2**
-    - VPC: **ContainerHol**
-    - Subnet: **HolSubnetA, HolSubnetB**
-    - Security Group: ContainerHol VPC 연결된 SecurityGroup
-    - Container instance IAM role: **Create new role** 혹은 **ecsInstanceRole**
+    - VPC: **ContainerHOL**
+    - Subnet: **ContainerHOL Public Subnet(AZ1), ContainerHOL Public Subnet(AZ2)**
+    - Security Group: **Container HOL VPC  VPC Security Group**
+    - Container instance IAM role: **Create new role** 혹은 **ecsInstanceRole** (처음 ECS클러스터를 생성하는 계정이면 ecsInstanceRole이 존재하지 않습니다.)
 
-6. 항목을 다 입력했으면 Create 버튼을 누릅니다. 클러스터 생성이 완전히 완료가 되기 전가지는 브라우저의 해당 탭에서 다른 웹페이지로 이동하지 않습니다.
+6. CloudWatch Container Insights 항목으로 이동하여 아래의 화면과 같이 CloudWatch Container Insights 체크박스에 체크를 합니다.
 
-7. 생성이 완료되고 나면 상단의 View Cluster 버튼이 활성화 됩니다. 해당 버튼을 클릭하여 클러스터의 상태를 확인하는 패이지로 이동합니다.
+    ![Alt](/images/ecs/ecs-cloudwatch-option-enabled.png "generate git credential")
 
-8. ContainerHOL 클러스터의 대쉬보드 화면에서 각 탭을 눌러 현재 클러스터의 상태를 확인합니다. 다음과 같이 클러스터를 구성하는 ec2 인스턴스의 상태가 active면 정상적으로 생성된 것입니다.
+7. 항목을 다 입력했으면 Create 버튼을 누릅니다. 클러스터 생성이 완전히 완료가 되기 전가지는 브라우저의 해당 탭에서 다른 웹페이지로 이동하지 않습니다.
+
+8. 생성이 완료되고 나면 상단의 View Cluster 버튼이 활성화 됩니다. 해당 버튼을 클릭하여 클러스터의 상태를 확인하는 패이지로 이동합니다.
+
+9. ContainerHOL 클러스터의 대쉬보드 화면에서 각 탭을 눌러 현재 클러스터의 상태를 확인합니다. 다음과 같이 클러스터를 구성하는 ec2 인스턴스의 상태가 active면 정상적으로 생성된 것입니다.
 
     ![Alt](/images/ecs/view-cluster-status.png "generate git credential")

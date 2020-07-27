@@ -17,29 +17,37 @@ weight: 200
 
     ![Alt](/images/ecs/create-task-definition.png "create task definition")
 
-5. 윈도우즈 혹은 Mac에서 에디터를 열어서 아래의 텍스트를 붙여넣습니다.  YOUR_IMAGE_URI에 앞의 실습에서 생성한 ECR 리포지토리 URI를 입력합니다.
+5. 윈도우즈 혹은 Mac에서 에디터를 열어서 아래의 텍스트를 붙여넣습니다.  **YOUR_IMAGE_URI** 에 앞의 실습에서 생성한 ECR 리포지토리 URI를 입력합니다.
 
     > **주의: EC2 기반의 클러스터에서 EC2 Launch Type의 Task Definition을 통해 Task를 실행할때는 별도의 task execution 역활을 정의하지 않습니다!!**
 
     ```json
     {
-    "containerDefinitions": [{
-        "name": "hol-webapp",
-        "image": "<YOUR_IMAGE_URI>",
-        "essential": true,
-        "portMappings": [{
-        "hostPort": 80,
-        "protocol": "tcp",
-        "containerPort": 80
-        }]
-    }],
-    "requiresCompatibilities": [
-        "EC2"
-    ],
-    "networkMode": "awsvpc",
-    "cpu": "256",
-    "memory": "256",
-    "family": "hol-webapp"
+        "containerDefinitions": [
+            {
+                "name": "hol-webapp",
+                "image": "<YOUR_IMAGE_URI>",
+                "essential": true,
+                "portMappings": [
+                    {
+                        "hostPort": 80,
+                        "protocol": "tcp",
+                        "containerPort": 80
+                    }
+                ]
+            }
+        ],
+        "requiresCompatibilities": [
+            "EC2"
+        ],
+        "networkMode": "awsvpc",
+        "cpu": "256",
+        "memory": "256",
+        "family": "hol-webapp",
+        "inferenceAccelerators": [],
+        "volumes": [],
+        "placementConstraints": [],
+        "tags": []
     }
     ```
 
@@ -49,7 +57,7 @@ weight: 200
 
     ```json
     {
-    "containerDefinitions": [{
+        "containerDefinitions": [{
         "name": "hol-webapp",
         "image": "01234567890.dkr.ecr.us-west-2.amazonaws.com/containerhol/webapphol",
         "essential": true,
@@ -58,14 +66,14 @@ weight: 200
         "protocol": "tcp",
         "containerPort": 80
         }]
-    }],
-    "requiresCompatibilities": [
-        "EC2"
-    ],
-    "networkMode": "awsvpc",
-    "cpu": "256",
-    "memory": "256",
-    "family": "hol-webapp"
+        }],
+        "requiresCompatibilities": [
+            "EC2"
+        ],
+        "networkMode": "awsvpc",
+        "cpu": "256",
+        "memory": "256",
+        "family": "hol-webapp"
     }
     ```
 

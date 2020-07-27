@@ -16,13 +16,13 @@ weight: 300
 
 5. 다음과 같이 Configure Load Balancer 페이지를 완료합니다. 나머지는 다 디폴트로 둡니다.
 
-    - name: hol-alb
+    - name: ContainerHOL-ALB
     - vpc: ContainerHOL
     - Availability Zones: us-west-2a, us-west-2b 체크
 
-6. Security Group: vpc에 연결된 디폴트 보안 그룹 선택하고 다음으로 넘어갑니다.
+6. "Improve you load balancer's security. Your load balancer is not using secure listener" 라는 메시지가 출력되는데 무시하고 다음으로 넘어갑니다.
 
-7. "Improve you load balancer's security. Your load balancer is not using secure listener" 라는 메시지가 출력되는데 무시하고 다음으로 넘어갑니다.
+7. **Security Group: Select an existing security group** 라디오 버튼을 클릭하고 아래쪽에서 **Container HOL VPC Security Group** 보안 그룹을 선택하고 Next: Configure Routing버튼을 눌러 다음으로 넘어갑니다. 
 
 8. Configure Routing 섹션 은 다음과 같이 입력합니다. 나머지는 디폴트로 둡니다.
     - name: hol-tg-1
@@ -36,6 +36,6 @@ weight: 300
 
     > 이렇게 인터벌을 줄이면 빠르게 ALB의 타켓을 헬스 체크할 수 있습니다. 실제 워크로드는 기동되는 시간을 고려하여 Healthy threshhold, Interval 등을 설정하는 것이 좋습니다.
 
-10. Register Targets 은 생략하고 넘어갑니다.
+10. Register Targets 은 생략하고 Next:review 버튼을 놀러 넘어갑니다.
 
 11. Create 버튼을 눌러서 로드 밸런서를 생성합니다.

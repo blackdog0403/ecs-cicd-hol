@@ -17,17 +17,17 @@ weight: 400
 
     - Launch type: EC2
     - Cluster: ContainerHOL
-    - Service name: hol-webapp-service
+    - Service name: ContainerHOL-webapp-service
     - Number of tasks: 2
     - Deployment type: Rolling update
 
 6. 위의 항목을 입력하고 다음 버튼을 눌러 Configure Network 페이지에서 다음의 항목을 아래와 같이 입력합니다. 나머지는 디폴트로 내버려 둡니다.
 
     - Cluster VPC: ContainerHOL
-    - Subnets: HolSubnetA, HolSubnetB
-    - Security Groups: ContainerHOL VPC의 디폴트 Security Group 선택
+    - Subnets: ContainerHOL Public Subnet(AZ1), ContainerHOL Public Subnet(AZ2)
+    - Security Groups: edit 버튼을 눌러서 **Select existing security group** 라디오 버튼에 체크하고 Container HOL VPC Security Group 선택
     - Load balancer type: Application Load Balancer
-    - Load balancer name: hol-alb
+    - Load balancer name: ContainerHOL-ALB
 
 7. Container to load balance 항목 아래의 **Add to load balancer** 버튼을 클릭하여 아래와 같이 선택합니다.
 
@@ -50,7 +50,7 @@ weight: 400
 
     ![Alt](/images/ec2/view-target-status.png "view target status")
 
-13. Target Group의 Description 탭을 눌러서 Load Balacer 항목의 **hol-alb**를 클릭합니다.
+13. Target Group의 Description 탭을 눌러서 Load Balacer 항목의 **Select existing security group**를 클릭합니다.
 
     ![Alt](/images/ec2/view-target-group.png "view target group")
 

@@ -102,7 +102,7 @@ Resources:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupName: "Container HOL VPC Security Group"
-      GroupDescription: "Security group with no ingress rule"
+      GroupDescription: "Security group with 80/443 from internet"
       VpcId: !Ref VPC
       SecurityGroupIngress:
       - IpProtocol: tcp
