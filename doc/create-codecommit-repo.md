@@ -20,11 +20,11 @@
 
 3. AWS CodeCommit 자격 증명 탭을 선택합니다. 그리고 하단에 있는 Generate Git Credentials 버튼을 클립합니다.
 
-     ![Alt](../images/iam/generate-git-credential.png "generate git credential")
+     ![Alt](/images/iam/generate-git-credential.png "generate git credential")
 
 4. IAM이 생성한 사용자 이름과 암호를 복사하는 방법은 로컬 컴퓨터에 있는 안전한 파일에 표시, 복사 후 붙여넣기하거나 자격 증명 다운로드를 선택하여 .CSV 파일로 이 정보를 다운로드하는 두 가지가 있습니다. CodeCommit에 접속하려면 이 정보가 필요합니다. Download credentials 버튼을 눌러서 CSV 파일로 저장해두록 합니다.
 
-    ![Alt](../images/iam/download-git-credential.png "generate git credential")
+    ![Alt](/images/iam/download-git-credential.png "generate git credential")
 
      > **이때가 사용자 이름과 암호를 저장할 수 있는 유일한 기회입니다.** 이 정보를 저장하지 않는 경우, 사용자 이름은 IAM 콘솔에서 복사할 수 있지만 암호는 찾을 수 없습니다. 그러므로 암호를 재설정한 후 저장해야 합니다.
 
@@ -38,7 +38,7 @@
 
 4. Step 3: Clone the repository 항목에 있는 명령어를 Copy버튼을 눌러서 복사합니다.
 
-    ![Alt](../images/codecommit/copy-codecommit-repo-url.png "generate git credential")
+    ![Alt](/images/codecommit/copy-codecommit-repo-url.png "generate git credential")
 
 5. [Cloud9 대쉬보드 화면으로 이동하여](https://us-west-2.console.aws.amazon.com/cloud9/home?region=us-west-2) 앞에서 생성한 워크스페이스 항목에서 Open IDE 버튼을 눌러 개발환경을 엽니다.
 

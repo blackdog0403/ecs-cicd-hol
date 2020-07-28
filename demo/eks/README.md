@@ -84,3 +84,4 @@ cd ~/environment/ecsdemo-nodejs
 kubectl delete -f kubernetes/service.yaml
 kubectl delete -f kubernetes/deployment.yaml
 ```
+tertetse

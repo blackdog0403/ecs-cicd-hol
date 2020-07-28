@@ -12,11 +12,11 @@
 3. Name 에 containerhol 등과 같은 형식으로 입력합니다. 다른 항목은 디폴트로 내버려둡니다.
 4. 워크스페이스 생성이 되면 welcome 탭을 닫고 새로운 터미널을 열어서 개발 환경을 커스터 마이징 합니다.
 
-     ![Alt](../images/cloud9/c9before.png "cloud9 before")
+     ![Alt](/images/cloud9/c9before.png "cloud9 before")
 
 5. 여러분의 워크스페이스는 다음과 같아 보여야합니다.:
 
-     ![Alt](../images/cloud9/c9after.png "cloud9 afters")
+     ![Alt](/images/cloud9/c9after.png "cloud9 afters")
 
 ## [다음: ECR 에 도커 이미지를 위한 리포지토리 생성하기](cloud9-docker-basic.md)
 

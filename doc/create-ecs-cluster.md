@@ -23,7 +23,7 @@
 
 8. ContainerHOL 클러스터의 대쉬보드 화면에서 각 탭을 눌러 현재 클러스터의 상태를 확인합니다. 다음과 같이 클러스터를 구성하는 ec2 인스턴스의 상태가 active면 정상적으로 생성된 것입니다.
 
-    ![Alt](../images/ecs/view-cluster-status.png "generate git credential")
+    ![Alt](/images/ecs/view-cluster-status.png "generate git credential")
 
 ## [다음: Task Definition 작성하기](create-task-definition.md)
 

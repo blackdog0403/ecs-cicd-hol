@@ -1,5 +1,13 @@
 # ECS 용 VPC 환경 생성
 
+## Cloud Formation Template을 활용한 ECS용 VPC 생성
+
+Click the **Launch** button to create the CloudFormation stack in the AWS Management Console.
+
+| Launch template |  |  |
+| ------ |:------:|:--------:|
+| VPC for ECS |  {{< cf-launch "vpc-ecs-cfn.yml" "eksws-codepipeline" >}} | {{< cf-download "vpc-ecs-cfn.yml" >}}  |
+
 ## VPC 생성하기
 
 1. AWS 관리 콘솔에서 접속합니다.

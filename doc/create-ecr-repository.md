@@ -6,7 +6,7 @@
 
 1. [https://console.aws.amazon.com/ecr/repositories](https://console.aws.amazon.com/ecr/repositories) 에서 Amazon ECR 콘솔을 엽니다.
 
-2. 오른쪽 상단의 탐색 모음에서 리포지토리를 생성할 리전 US WEST (oregon) 를 선택합니다.
+2. 오른쪽 상단의 탐색 모음에서 리포지토리를 생성할 리전 us-west-2 (oregon) 를 선택합니다.
 
 3. 탐색 창에서 Repositories를 선택합니다.
 
@@ -18,7 +18,7 @@
 
 1. 생성한 리포지토리를 선택하고 오른쪽 상단의 **View push commands(푸시 명령 보기)** 를 선택하여 새 리포지토리에 푸시하는 단계를 봅니다. 다음과 같은 화면을 볼 수 있습니다.
 
-    ![Alt](../images/ecr/view-push-commands.png "generate git credential")
+    ![Alt](/images/ecr/view-push-commands.png "generate git credential")
 
     위의 명령어들을 이용하여 직접 ECR 리포지토리에 nginx 도커 이미지를 푸쉬해보도록 합니다.
 

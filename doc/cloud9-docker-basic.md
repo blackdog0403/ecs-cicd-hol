@@ -41,7 +41,7 @@ docker images
 docker search nginx
 ```
 
-![Alt](../images/cloud9/cloud9-docker-search.png "cloud9 docker search")
+![Alt](/images/cloud9/cloud9-docker-search.png "cloud9 docker search")
 
 ## docker run 명령어로 도커 이미지 실행하기
 
@@ -61,7 +61,7 @@ docker ps
 
 다음과 같은 화면을 볼 수 있습니다.
 
-![Alt](../images/cloud9/cloud9-docker-ps.png "cloud9 afters")
+![Alt](/images/cloud9/cloud9-docker-ps.png "cloud9 afters")
 
 ## docker port 명령어로 컨테이너의 포트 연결 확인하기
 
@@ -84,7 +84,7 @@ blackdog-dev:~/environment $ docker port mynginx
 
 아래의 화면처럼 상단의 Preview 메뉴를 클릭하여 8080포트로 기동한 도커 컨테이너에 접속해서 테스트를 해볼 수 있습니다.
 
-![Alt](../images/cloud9/cloud9-preview.png "cloud9 afters")
+![Alt](/images/cloud9/cloud9-preview.png "cloud9 afters")
 
 ## docker logs로 컨테이너의 로그 출력해서 보기
 

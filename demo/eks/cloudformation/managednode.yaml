@@ -1,0 +1,42 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: 'EKS Managed Nodes (SSH access: false) [created by eksctl]'
+Resources:
+  ManagedNodeGroup:
+    Type: 'AWS::EKS::Nodegroup'
+    Properties:
+      ClusterName: eksworkshop-eksctl
+      NodegroupName: c5-workers
+      ScalingConfig:
+        MinSize: 2
+        MaxSize:2 kwang young babo
+        DesiredSize: 2
+      Subnets: !Split 
+        - ','
+        - !ImportValue 'eksctl-eksworkshop-eksctl-cluster::SubnetsPublic'
+      InstanceTypes:
+        - c5.large
+      AmiType: AL2_x86_64
+      NodeRole: !GetAtt NodeInstanceRole.Arn
+      Labels:
+        alpha.eksctl.io/cluster-name: eksworkshop-eksctl
+        alpha.eksctl.io/nodegroup-name: c5-workers
+      Tags:
+        alpha.eksctl.io/nodegroup-name: c5-workers
+        alpha.eksctl.io/nodegroup-type: managed
+  NodeInstanceRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action:
+              - 'sts:AssumeRole'
+            Effect: Allow
+            Principal:
+              Service:
+                - ec2.amazonaws.com
+        Version: 2012-10-17
+      ManagedPolicyArns:
+        - 'arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly'
+        - 'arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy'
+        - 'arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy'
+      Path: /
