@@ -28,3 +28,8 @@ weight: 200
     | sort exceptionCount desc
     ```
 5. 아래 화면의 처럼 결과를 csv 파일 형식으로 출력을 하거나 Cloud Watch Dashboard에 추가하여 바로 확인도 가능합니다.
+
+     ![Alt](/images/cloudwatch/additionalfeature.png "view service status")
+
+6. 실습을 완료하였습니다.
+

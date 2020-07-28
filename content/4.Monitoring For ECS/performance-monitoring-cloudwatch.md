@@ -7,7 +7,7 @@ weight: 100
 
 ## Cloud Watch Container Insights
 
-1. 다음의 링크를 클릭하여 Cloud Watch Console로 이동합니다.[Amazon Cloud Watch Console](https://us-west-2.console.aws.amazon.com/cloudwatch/home?region=us-west-2)
+1. 다음의 링크를 클릭하여 Cloud Watch Console로 이동합니다. **[Amazon Cloud Watch Console](https://us-west-2.console.aws.amazon.com/cloudwatch/home?region=us-west-2)**
 
     ![Alt](/images/cloudwatch/cloudwatch-console.png "view service status")
 
