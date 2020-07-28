@@ -1,7 +1,7 @@
 ---
 title: "Clean Up"
 chapter: true
-weight: 400
+weight: 900
 ---
 
 # 실습후 리소스 삭제하기 
@@ -23,4 +23,4 @@ Event Engine을 통해서 실습을 한 경우에는 리소스들을 삭제할 �
 8. Code commit 리포지토리 삭제
 9. Code build 프로젝트 삭제
 10. Cloud9 워크스페이스 삭제
-11. VPC 삭제
+11. Cloud Formation 으로 ContainerHOL stack ( VPC ) 삭제

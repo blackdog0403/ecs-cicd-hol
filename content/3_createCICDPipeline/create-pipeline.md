@@ -40,7 +40,8 @@ CodePipeline 마법사를 사용하여 파이프라인 단계를 생성하고, �
         - Environment Image: **Managed Image**
         - Operating System: **Ubuntu**
         - Runtime: **Standard**
-        - Image: **aws/codebuild/standard:1.0**
+        - Image: **aws/codebuild/standard:4.0**
+        - Image Version: **Always use the lastest Image for runtime version**
         - **Privileged 옵션 체크**
         > Privileged 옵셥을 체크하지 않는다면 Code build에서 도커 이미지를 빌드할 수 없습니다
         - Continue to CodePipeline 버튼을 누릅니다
@@ -51,11 +52,19 @@ CodePipeline 마법사를 사용하여 파이프라인 단계를 생성하고, �
     - Deploy provider : **Amazon ECS**
     - Region: **us-west-2 - (Oregon)**
     - Cluster name: **ContainerHOL**
-    - Service name: **hol-webapp-service**
+    - Service name: **ContainerHOL-webapp-service**
 
-5. 리뷰 페이지에서 파이프라인 구성을 검토하고 Create Pipeline(파이프라인 생성)을 선택하여 파이프라인을 생성합니다.
+5. 리뷰 페이지에서 파이프라인 구성을 검토하고 Create Pipeline(파이프라인 생성)을 선택하여 파이프라인을 생성합니다.이제 파이프라인이 생성되었으며 다른 파이프라인 단계에서 이 파이프라인이 실행하려고 시도합니다.
 
-    > 이제 파이프라인이 생성되었으며 다른 파이프라인 단계에서 이 파이프라인이 실행하려고 시도합니다. 하지만 마법사가 만든 기본 CodeBuild 역할이 buildspec.yml 파일에 포함된 모든 명령을 실행할 수 있는 권한을 갖고 있지 않으므로 빌드 단계가 실패합니다. 다음 단계에서는 빌드 단계를 위한 권한을 추가합니다.
+    >  하지만 마법사가 만든 기본 CodeBuild 역할이 buildspec.yml 파일에 포함된 모든 명령을 실행할 수 있는 권한을 갖고 있지 않으므로 빌드 단계가 실패합니다. 다음 단계에서는 빌드 단계를 위한 권한을 추가합니다.
+
+    ![Alt](/images/codepipeline/codepipeline-build-fail.png "view service status")
+
+    detail버튼을 눌러서 확인하면 아래와 같이 빌드중에 오류가 발생한 것을 확인할 수 있습니다.
+
+    ![Alt](/images/codepipeline/buildlog.png "view service status")
+
+
 
 ## CodeBuild 역할에 Amazon ECR 권한을 추가하기
 
@@ -63,7 +72,7 @@ CodePipeline 마법사를 사용하여 파이프라인 단계를 생성하고, �
 
 2. 왼쪽 탐색 창에서 역할을 선택합니다.
 
-3. 검색란에 codebuild-를 입력하고 CodePipeline 마법사가 생성한 역할을 선택합니다. 이 핸즈온랩에서의 역할이름은 **codebuild-hol-build--service-role**입니다.
+3. 검색란에 codebuild-를 입력하고 CodePipeline 마법사가 생성한 역할을 선택합니다. 이 핸즈온랩에서의 역할이름은 **codebuild-containerHol-build--service-role**입니다.
 
 4. Summary(요약) 페이지에서 Attach policies (정책 연결)을 선택합니다.
 
@@ -71,7 +80,7 @@ CodePipeline 마법사를 사용하여 파이프라인 단계를 생성하고, �
 
 ## 파이프라인 테스트하기
 
-1. 다음의 링크로 [https://us-west-2.console.aws.amazon.com/codesuite/codepipeline/pipelines?region=us-west-2](https://us-west-2.console.aws.amazon.com/codesuite/codepipeline/pipelines?region=us-west-2) 이동하여 hol-cicd를 선택하고 오른쪽 상단의 release changes를 선택합니다.
+1. 다음의 링크로 [Code Pipeline 콘솔](https://us-west-2.console.aws.amazon.com/codesuite/codepipeline/pipelines?region=us-west-2) 이동하여 hol-cicd를 선택하고 오른쪽 상단의 release changes를 선택합니다.
 
     ![Alt](/images/codepipeline/run-release.png "view service status")
 
@@ -79,7 +88,7 @@ CodePipeline 마법사를 사용하여 파이프라인 단계를 생성하고, �
 
     ![Alt](/images/codepipeline/view-result.png "view service result")
 
-3. 정상적으로 배포되었다면 [https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#LoadBalancers:sort=loadBalancerName](https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#LoadBalancers:sort=loadBalancerName) 에서 hol-alb를 선택한후에 Description 탭의 DNS name을 복사하여 웹 브라우저에 붙여넣고 "Hello World"가 정상적으로 뜨는지 확인합니다.
+3. 정상적으로 배포되었다면 [EC2 콘솔 - Load Balancer](https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#LoadBalancers:sort=loadBalancerName) 에서 **ContainerHOL-ALB**를 선택한후에 Description 탭의 DNS name을 복사하여 웹 브라우저에 붙여넣고 "Hello World"가 정상적으로 뜨는지 확인합니다.
 
 4. 이번에는 구성된 소스 리포지토리에 대한 코드를 변경하고 커밋한 후 변경 사항을 푸시합니다. Cloud9 워크 스페이스에서 왼쪽의 탐색창에서 Dockerfile을 찾아서 더블 클릭하여 편집창을 열고 다음과 같이 수정합니다.
 
@@ -110,6 +119,6 @@ CodePipeline 마법사를 사용하여 파이프라인 단계를 생성하고, �
 
 6. 정상적으로 푸쉬가 되었다면 commit hook으로 인하여 Code Pipeline이 자동으로 실행이 됩니다.
 
-7. [https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#LoadBalancers:sort=loadBalancerName](https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#LoadBalancers:sort=loadBalancerName) 로 이동하여 hol-alb를 선택한후에 Description 탭의 DNS name을 복사하여 웹 브라우저에 붙여넣고 "Hello World version2 "가 정상적으로 뜨는지 확인합니다.
+7. [EC2 콘솔 - Load Balancer](https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#LoadBalancers:sort=loadBalancerName) 로 이동하여 **ContainerHOL-ALB**를 선택한후에 Description 탭의 DNS name을 복사하여 웹 브라우저에 붙여넣고 "Hello World version2 "가 정상적으로 뜨는지 확인합니다.
 
 실습을 완료하였습니다.
