@@ -30,7 +30,7 @@
 @font-face {
     font-family: 'Amazon Ember';
     src: url("../webfonts/AmazonEmber_W_Lt.eot");
-    src: url("../webfonts/AmazonEmber_W_Lt.eot?#iefix") format("embedded-opentype"), url("../webfonts/AmazonEmber_W_Lt.woff2#iefix") format("woff2"), url("../webfonts/AmazonEmber_W_Lt.woff#iefix") format("woff");
+    src: url("../webfonts/AmazonEmber_W_Lt.eot?#iefix") format("embedded-opentype"), url("../webfonts/AmazonEmber_W_Lt.woff2") format("woff2"), url("../webfonts/AmazonEmber_W_Lt.woff") format("woff");
     font-style: normal;
     font-weight: 200;
 }
