@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "ko-KR"
 defaultContentLanguage = "ko"
-googleAnalytics = "UA-164685676-1"
+
 title = "AWS ECS Workshop"
 theme = "hugo-theme-learn"
 themesdir = "themes"
@@ -36,11 +36,6 @@ weight = 5
 name = "<i class='fas fa-chalkboard'></i> AppMesh Workshop"
 url = "https://appmeshworkshop.com"
 weight = 6
-
-[[Languages.ko.menu.shortcuts]]
-name = "<i class='fab fa-github'></i> GitHub Project"
-url = "https://github.com/blackdog0403/ecs-cicd-hol.git"
-weight = 30
 
 [[Languages.ko.menu.shortcuts]]
 name = "<i class='fas fa-bookmark'></i> More Resources"

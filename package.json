@@ -24,9 +24,9 @@
     "deployothers": "aws s3 sync public/ s3://us-east-1-eksworkshop.com/ --delete --cache-control \"max-age=86400, public\" --exclude \"*.html\" --exclude \"*.xml\""
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "hugo-bin": "v0.62.1",
     "hugo-lunr": "0.0.4",
-    "mermaid": "^8.4.2"
+    "mermaid": "^8.8.0"
   }
 }
