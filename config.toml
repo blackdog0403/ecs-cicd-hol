@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "ko-KR"
 defaultContentLanguage = "ko"
-
+googleAnalytics = "UA-164685676-1"
 title = "AWS ECS Workshop"
 theme = "hugo-theme-learn"
 themesdir = "themes"
